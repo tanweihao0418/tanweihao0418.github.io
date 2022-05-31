@@ -8,28 +8,59 @@
 </head>
 
 <style type="text/css">
+    body{
+        background-color:#79DAE8;
+    }
+    .main_container {
+        display: flex;
+        background-color: #E8F9FD;
+        flex-direction: column;
+        border-style: solid;
+        border-width: 3px;
+        border-color: black;
+        margin-bottom: 10px;
+        
+    }
     .container {
-        margin: auto;
-        max-width: 500px;
-        max-height: 500px;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        background-color: #E8F9FD;
     }
 
-    #prof {
-        max-width: 300px;
-        max-height: 300px;
+    .pic_container {
+        flex: 2;
+        background-color:#E8F9FD;
+    }
+    .text_container{
+        flex: 5;
+        background-color: #E8F9FD;
+    }
+    .link_text a{
+        font-size: 20px;
+        text-decoration:none;
+        font-weight: bold;
     }
 </style>
 
 <body>
-    <div class="container">
-        <img id="prof" src="week2/prof_img.jpg">
-        <h1>Name : Tan Wei Hao</h1>
-        <h1>Email : tanweihao0418@e.newera.edu.my</h1>
-        <ol>
-            <li><a href="https://tanweihao0418.github.io/week2/web.html">week2</a></li>
-            <li><a href="https://tanweihao0418.github.io/week3/">week3</a></li>
-        </ol>
-        
+    <div class="main_container">
+        <div class="container">
+            <div class="pic_container">
+                <img style="max-width: 200px;max-height:200px;" src="week2/prof_img.jpg">
+            </div>
+            <div class="text_container">
+                <h2>Name : Tan Wei Hao</h2>
+                <h2>Email : tanweihao0418@e.newera.edu.my</h2>
+            </div>
+            <div class="text_container" style="background-color:#E8F9FD">
+                <ol class="link_text">
+                    <li><a href="https://tanweihao0418.github.io/week2/web.html">week2</a></li>
+                    <li><a href="https://tanweihao0418.github.io/week3/">week3</a></li>
+                </ol>
+            </div>
+        </div>
     </div>
+    
+    
 </body>
