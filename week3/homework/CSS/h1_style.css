@@ -1,0 +1,31 @@
+body {
+    font-family: 'Lato'
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.text_container {
+    justify-content: center;
+    margin: 120px 100px 80px 0px;
+    float: left;
+    border-style: solid;
+    border-width: 7px 7px 7px 0px;
+    padding: 50px 110px 50px 50px;
+}
+
+.pic_container {
+    float: left;
+}
+
+#main_text {
+    font-weight: bolder;
+    font-size: 80px;
+    margin: 25px 0px 25px;
+}
+
+#sub_text {
+    font-size: 25px;
+}

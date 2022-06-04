@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lato'
+}
+.container {
+    display: flex;
+    background-color:#0F0E0C ;
+    
+}
+.text_container{
+    text-align: center;
+    float: left;
+    color: white;
+    border-color: #E4E1D0;
+    border-style: solid;
+    border-width: 0px 2px 0px 2px;
+    width: 500px;
+    height: 500px;
+    margin: 60px;
+    padding: 70px 70px 0px 70px;
+}
+.pic_container {
+    float: left;
+    border-color: #E4E1D0;
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    width: 500px;
+    height: 500px;
+    margin: 60px 0px 60px 0px;
+    padding: 70px 0px 0px 70px;
+}
+#pic{
+    height: 450px;
+}
