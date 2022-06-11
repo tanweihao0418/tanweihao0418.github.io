@@ -4,35 +4,104 @@
     margin: auto;
     padding: 10px;
 }
-.header{
+
+.header {
     text-align: center;
     background-color: aquamarine;
 }
-.content{
+
+.content {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
-.menu{
-    background-color: cyan;
-    text-align: center;
-    flex: 1;
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .menu {
+        width: 100%;
+        background-color: cyan;
+        text-align: center;
+    }
+    .menu_right {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .top {
+        background-color: hotpink;
+        text-align: center;
+        display: flex;
+        width: 100%;
+    }
+    .main {
+        width: 50%;
+    }
+    
+    .right {
+        width: 50%;
+    }
 }
-.menu_right{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
+
+@media only screen and (min-width: 1024px) {
+    .menu {
+        background-color: cyan;
+        text-align: center;
+        width: 40%;
+    }
+    .menu_right {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .top {
+        background-color: hotpink;
+        text-align: center;
+        display: flex;
+        width: 100%;
+    }
+    .main {
+        width: 50%;
+    }
+    
+    .right {
+        width: 50%;
+    }
 }
-.top{
-    background-color:hotpink;
-    display: flex;
-    text-align: center;
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        background-color: cyan;
+        text-align: center;
+    }
+    .menu_right {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .top {
+        background-color: hotpink;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    
+    .right{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
 }
-.main{
-    flex: 1;
-}
-.right{
-    flex: 1;
-}
-.footer{
+
+
+
+
+.footer {
     background-color: lightcoral;
     text-align: center;
 }
