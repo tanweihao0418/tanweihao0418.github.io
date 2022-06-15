@@ -15,16 +15,44 @@
                 <img id="logo" src="../images/fav.png" alt="logo" />
             </div>
             <div class="right">
-                
+
                 <h2 id="hp_no">011-11199174</h2>
                 <div class="menu">
                     <h1>Menu</h1>
                 </div>
-            </div>       
+            </div>
         </div>
-        
+
         <div class="img_sildeshow">
-            <img id="slide_img" src="../images/silde_img.jpg" alt="sample image" />
+            <div class="img_sildeshow">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="slide_img" src="../images/silde_img.jpg">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="slide_img" src="../images/slide_img1.jpg">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="slide_img" src="../images/slide_img2.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <div class="content_container">
             <div class="text_content">
@@ -67,9 +95,37 @@
             </div>
         </div>
         <div class="footer">
-            <h1>This is Footer</h1>
+            <h1>Footer</h1>
         </div>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
