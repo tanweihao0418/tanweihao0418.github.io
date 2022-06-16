@@ -1,0 +1,79 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'logo logo phone_no phone_no'
+        'menu menu menu menu'
+        'slide_show slide_show slide_show slide_show'
+        'feat1 feat2 feat3 feat4'
+        'text_content text_content text_content sidebar'
+        'footer footer footer footer';
+}
+.logo{
+    grid-area: logo;
+    background-color: blueviolet;
+    color: aqua;
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+}
+.phone_no{
+    grid-area: phone_no;
+    background-color: brown;
+    color: aqua;
+    text-align: center;
+    margin: 10px;
+}
+.menu{
+    grid-area: menu;
+    margin: 10px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.slideshow{
+    grid-area: slide_show;
+    margin: 10px;
+    text-align: center;
+    background-color: deepskyblue;
+}
+#feat1{
+    grid-area: feat1;
+    background-color: chartreuse;
+    margin: 10px;
+    text-align: center;
+}
+#feat2{
+    grid-area: feat2;
+    background-color: chartreuse;
+    margin: 10px;
+    text-align: center;
+}
+#feat3{
+    grid-area: feat3;
+    background-color: chartreuse;
+    margin: 10px;
+    text-align: center;
+}
+#feat4{
+    grid-area: feat4;
+    background-color: chartreuse;
+    margin: 10px;
+    text-align: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color:fuchsia;
+    margin: 10px;
+    text-align: center;
+}
+.text_container{
+    grid-area: text_content;
+    background-color:lawngreen;
+    margin: 10px;
+    text-align: center;
+}
+.footer{
+    margin: 10px;
+    grid-area: footer;
+    background-color:yellowgreen;
+    text-align: center;
+}

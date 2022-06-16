@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'logo menu menu'
+        'slide_show slide_show slide_show'
+        'feat1 feat2 feat3'
+        'sidebar text_content text_content'
+        'footer footer footer';
+}
+.logo{
+    grid-area: logo;
+    background-color: blueviolet;
+    color: aqua;
+    text-align: center;
+}
+.menu{
+    grid-area: menu;
+    background-color: brown;
+    color: aqua;
+    text-align: center;
+}
+.slideshow{
+    grid-area: slide_show;
+    text-align: center;
+    background-color: deepskyblue;
+}
+#feat1{
+    grid-area: feat1;
+    background-color: chartreuse;
+    margin-right: 5px;
+    text-align: center;
+}
+#feat2{
+    grid-area: feat2;
+    background-color: chartreuse;
+    margin-right: 5px;
+    text-align: center;
+}
+#feat3{
+    grid-area: feat3;
+    background-color: chartreuse;
+    gap:20px;
+    text-align: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color:fuchsia;
+    text-align: center;
+}
+.text_container{
+    grid-area: text_content;
+    background-color:lawngreen;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    background-color:yellowgreen;
+    text-align: center;
+}

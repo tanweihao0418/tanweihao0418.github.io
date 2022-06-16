@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'blog_menu blog_menu blog_menu'
+        'logo phone_no phone_no1'
+        'logo menu menu'
+        'slide_show slide_show sidebar'
+        'text_content text_content sidebar'
+        'footer footer footer';
+}
+.blogmenu{
+    grid-area: blog_menu;
+    margin: 10px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.logo{
+    grid-area: logo;
+    background-color: blueviolet;
+    color: aqua;
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+}
+.phone_no{
+    grid-area: phone_no1;
+    background-color: brown;
+    color: aqua;
+    text-align: center;
+    margin: 10px;
+}
+.menu{
+    grid-area: menu;
+    margin: 10px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.slideshow{
+    grid-area: slide_show;
+    margin: 10px;
+    text-align: center;
+    background-color: deepskyblue;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color:fuchsia;
+    margin: 10px;
+    text-align: center;
+}
+.text_container{
+    grid-area: text_content;
+    background-color:lawngreen;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+}
+.footer{
+    margin: 10px;
+    grid-area: footer;
+    background-color:yellowgreen;
+    text-align: center;
+}
