@@ -11,49 +11,55 @@
     grid-area: logo;
     background-color: blueviolet;
     color: aqua;
+    margin: 10px;
     text-align: center;
 }
 .menu{
     grid-area: menu;
     background-color: brown;
     color: aqua;
+    margin: 10px;
     text-align: center;
 }
 .slideshow{
     grid-area: slide_show;
     text-align: center;
+    margin: 10px;
     background-color: deepskyblue;
 }
 #feat1{
     grid-area: feat1;
     background-color: chartreuse;
-    margin-right: 5px;
+    margin: 10px;
     text-align: center;
 }
 #feat2{
     grid-area: feat2;
     background-color: chartreuse;
-    margin-right: 5px;
+    margin: 10px;
     text-align: center;
 }
 #feat3{
     grid-area: feat3;
     background-color: chartreuse;
-    gap:20px;
+    margin: 10px;
     text-align: center;
 }
 .sidebar{
     grid-area: sidebar;
     background-color:fuchsia;
+    margin: 10px;
     text-align: center;
 }
 .text_container{
     grid-area: text_content;
     background-color:lawngreen;
+    margin: 10px;
     text-align: center;
 }
 .footer{
     grid-area: footer;
     background-color:yellowgreen;
+    margin: 10px;
     text-align: center;
 }
