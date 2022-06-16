@@ -1,0 +1,78 @@
+body{
+    background-image: url('../images/forest_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    position: sticky;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: white;
+}
+.icon{
+    margin-right: 5px;
+}
+.link{
+    text-decoration: none;
+    color: gray;
+    margin-right: 10px;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.middle_text_container{
+    position: absolute;
+    top: 150px;
+    display :flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+.sm-text-container{
+    display: flex;
+    justify-content: center;
+}
+#travel_guide{
+    margin-right: 30px;
+}
+.left_bottom_container{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.right_bottom_container{
+    border-style: dotted;
+    border-radius: 2px;
+    border-color: white;
+    position: absolute;
+    top: 400px;
+    left:82%;
+    color: white;
+    max-width: 250px;
+}
+.text_box{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+#text1{
+    color: red;
+    font-weight: bolder;
+    font-size: 18px;
+}
+#text2{
+    font-weight: bold;
+}
+.circle_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
