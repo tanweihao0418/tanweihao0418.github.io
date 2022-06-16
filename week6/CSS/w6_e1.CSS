@@ -44,7 +44,7 @@ body{
 .left_bottom_container{
     position:absolute;
     left:0%;
-    top:400px;
+    top:500px;
     color: white;
     display: flex;
     align-items: center;
@@ -54,8 +54,8 @@ body{
     border-radius: 2px;
     border-color: white;
     position: absolute;
-    top: 400px;
-    left:82%;
+    top: 390px;
+    left:80%;
     color: white;
     max-width: 250px;
 }
