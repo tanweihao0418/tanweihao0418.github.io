@@ -1,0 +1,108 @@
+.lg_container{
+    display: flex;
+}
+.left_bar_container{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+}
+/* Middle (LOGO AND TEXT CONTENT) */
+.middle_container{
+    display: flex;
+    flex-direction:column;
+    flex: 4;
+}
+.site_title{
+    display: flex;
+    text-align: center;
+}
+#logo{
+    max-height: 4rem;
+    max-width: 15rem;
+}
+#title_text{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 5px;
+
+}
+.text_content{
+    margin-bottom: 400px;
+}
+#text{
+    font-weight: bold;
+    font-size: 2rem;
+}
+#text{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+#text1{
+    font-weight: bold;
+    font-size:3.1rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#text2{
+    color: gray;
+}
+#btn1{
+    background-image: url('imgs/Rectangle8@2x.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: none;
+    color: white;
+    max-width: 250px;
+    height: 2rem;
+}
+/* --------------------------- */
+.right_container{
+    display: flex;
+    flex: 5;
+    background-image: url("imgs/BgShape@2x.png");
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: white;
+}
+.navbar a {
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.navbar_img{
+    flex: 5;
+    margin-left: 120px;
+}
+#group_img{
+    max-width: 500px;
+    max-height: 700px;
+}
+.biography_container{
+    flex: 4;
+}
+#bio_text{
+    font-size: 1.2rem;
+}
+#bio_text1{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#bio_text2{
+    color: gray;
+}
+#bio_btn1{
+    background-image: url('imgs/Rectangle8@2x.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: none;
+    color: white;
+    max-width: 250px;
+}
