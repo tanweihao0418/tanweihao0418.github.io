@@ -1,10 +1,14 @@
 .lg_container{
     display: flex;
+    flex-direction: column;
 }
 .left_bar_container{
     display: flex;
     flex-direction:column;
     flex: 1;
+}
+.upper_container{
+    display: flex;
 }
 /* Middle (LOGO AND TEXT CONTENT) */
 .middle_container{
@@ -56,6 +60,16 @@
     max-width: 250px;
     height: 2rem;
 }
+#serv_text{
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 40px;
+}
+#serv_text1{
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+}
 /* --------------------------- */
 .right_container{
     display: flex;
@@ -103,6 +117,56 @@
     background-repeat: no-repeat;
     background-size:contain;
     border: none;
+    max-width: 170px;
     color: white;
+    text-align: center;
+}
+#bio_btn_text{
+    padding: 10px;
+}
+/* offer container */
+.offer_lg_container{
+    display: flex;
+    flex: 9;
+    justify-content: space-around;
+}
+.offer_sm_container{
+    display: flex;
+    flex-direction: column;
     max-width: 250px;
+    max-height: 400px;
+}
+.offer_img{
+    width:100px;
+    height: 100px;
+}
+.img_box{
+    display: flex;
+    justify-content: center;
+}
+.offer_title{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.offer_text{
+    margin: 0;
+}
+.offer_btn_container{
+    display: flex;
+    justify-content:flex-end ;
+}
+.offer_btn{
+    background-image: url('imgs/Rectangle8@2x.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: none;
+    color: white;
+    max-width: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+.offer_btn_text{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 2px 6px;
 }
