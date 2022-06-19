@@ -150,11 +150,11 @@
 /* offer container */
 .offer_lg_container{
     display: flex;
-    flex: 9;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .offer_sm_container{
     display: flex;
+    flex:2;
     flex-direction: column;
     max-width: 250px;
     max-height: 300px;
