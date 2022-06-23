@@ -100,10 +100,5 @@ body {
     }
     .topnav_links{
         flex: 1;
-        flex-direction: column;
-    }
-    .topnav.responsive a {
-      display: block;
-      text-align: left;
     }
   }
