@@ -3,7 +3,7 @@
 
 <head>
     <title>My Website</title>
-    <link rel="stylesheet" href="CSS/w6_e1.CSS">
+    <link rel="stylesheet" href="e2.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="e1.css">
@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+    </div>
     <div class="topnav" id="myTopnav">
         <div class="topnav_links">
             <a href="#home" class="active">Home</a>
@@ -18,7 +27,7 @@
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i id="burger_icon" class="fa fa-bars"></i>
         </a>
     </div>
@@ -27,26 +36,15 @@
         <h2>Responsive Topnav Example</h2>
         <p>Resize the browser window to see how it works.</p>
     </div>
-
     <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-
-            var y = document.getElementById("burger_icon");
-            if (y.className === "fa fa-bars") {
-                y.className="fa-solid fa-xmark"
-            } 
-            else {
-                y.className = "fa fa-bars";
-            }
-        
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
         }
-        
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
     </script>
 
 </body>
