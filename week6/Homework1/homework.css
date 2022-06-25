@@ -1,4 +1,11 @@
 /* Desktop CSS */
+
+body{
+    background-image: url("imgs/background@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 @media only screen and (min-width: 1000px) {
 
     .lg_container {
@@ -41,6 +48,9 @@
     }
     .biography_container_mobile{
         display: none;
+        background-image: url("imgs/whowearebackground@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     #logo {
         max-height: 4rem;
@@ -151,20 +161,23 @@
 
     .biography_container {
         flex: 4;
+        background-image: url("imgs/whowearebackground@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    #bio_text {
+    .bio_text {
         font-size: 1.2rem;
     }
 
-    #bio_text1 {
+    .bio_text1 {
         font-size: 2rem;
         font-weight: bolder;
         margin-top: 0px;
         margin-bottom: 10px;
     }
 
-    #bio_text2 {
+    .bio_text2 {
         color: gray;
         line-height: 25px;
         word-wrap: break-word;
@@ -526,6 +539,9 @@
     }
     .biography_container_mobile{
         display: none;
+        background-image: url("imgs/whowearebackground@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     #logo {
         max-height: 4rem;
@@ -636,20 +652,23 @@
 
     .biography_container {
         flex: 4;
+        background-image: url("imgs/whowearebackground@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    #bio_text {
+    .bio_text {
         font-size: 1.2rem;
     }
 
-    #bio_text1 {
+    .bio_text1 {
         font-size: 2rem;
         font-weight: bolder;
         margin-top: 0px;
         margin-bottom: 10px;
     }
 
-    #bio_text2 {
+    .bio_text2 {
         color: gray;
         line-height: 25px;
         word-wrap: break-word;
@@ -1106,20 +1125,23 @@
 
     .biography_container {
         flex: 4;
+        background-image: url("imgs/whowearebackground@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    #bio_text {
+    .bio_text {
         font-size: 1.2rem;
     }
 
-    #bio_text1 {
+    .bio_text1 {
         font-size: 2rem;
         font-weight: bolder;
         margin-top: 0px;
         margin-bottom: 10px;
     }
 
-    #bio_text2 {
+    .bio_text2 {
         color: gray;
         line-height: 25px;
         word-wrap: break-word;
@@ -1157,7 +1179,7 @@
         border-radius: 30px;
         display: flex;
         flex-direction: column;
-        max-height: 300px;
+        max-height: 400px;
         margin: 60px;
     }
 
