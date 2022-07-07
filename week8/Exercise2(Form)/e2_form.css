@@ -1,0 +1,71 @@
+.input_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#lg_text{
+    color: #325D26;
+    font-size: 35px;
+}
+.button_container{
+    display: flex;
+    margin: 10px 0px;
+    justify-content: center;
+}
+.container{
+    background-color: #E3F8EE;
+    max-width: 600px;
+}
+.label_text{
+    color: #638850;
+    display:inline-block;
+    padding-bottom: 10px;
+}
+input , select{
+    background-color: #EDF9F7;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+#fname{
+    flex:1;
+    margin-right: 20px;
+}
+#lname{
+    flex:1;
+}
+#email{
+    flex:1
+}
+#phone{
+    flex: 1;
+}
+#street{
+    flex: 1;
+}
+#street1{
+    flex: 1;
+}
+#city{
+    flex: 1;
+    margin-right: 20px;
+}
+#region{
+    flex: 1;
+}
+#postal{
+    flex: 1;
+    margin-right: 20px;
+}
+#country{
+    flex: 1;
+}
+.button_container button{
+    background-color: #23622B;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 18px;
+}
