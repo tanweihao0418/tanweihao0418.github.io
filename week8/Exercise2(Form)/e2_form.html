@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Website</title>
+    <title>Form</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="e2_form.css">
@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <form action="/action_page.php" method="get" id="form1">
+        <form action="secondpg.html" method="get" id="form1">
             <fieldset>
              <legend id="lg_text">Farmer Registration Form</legend>
 
@@ -31,7 +31,14 @@
             <div class="input_container">
                 <input type="text" id="phone" placeholder="### ### ####">
             </div>
-
+            
+            <label class="label_text" for="input_container">Gender</label>
+            <div class="input_container">
+                <input type="radio" id="male" value="Male" name="m">
+                <label for="male">Male</label>
+                <input type="radio" id="female"  value="Female" name="m">
+                <label for="female">Female</label>
+            </div>
 
             <label class="label_text" for="input_container">Farmer Address</label>
             <div class="input_container">
