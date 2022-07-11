@@ -32,7 +32,7 @@ body {
     background-image: url("../imgs/star-wars-backgrounds-25.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center
+    background-position: center;
 }
 .sec_bar{
     color: white;
@@ -159,6 +159,17 @@ body {
     
     .nav_links{
         display:none;
+    }
+    .cover_container{
+        display: flex;
+        justify-content: center;
+        background-image: url("../imgs/star-wars-backgrounds-25.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    .cover_container img{
+        max-width: 450px;
     }
 
     .nav_bar{

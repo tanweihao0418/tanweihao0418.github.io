@@ -254,7 +254,7 @@ hr.hr_line{
         text-align: center;
         background-color:rgba(217, 217, 217,0.2);
     }
-    .two{
+    .two,.three,.four,.five,.six,.seven,.eight,.nine{
         display: none;
     }
     .movie_sm_container{
