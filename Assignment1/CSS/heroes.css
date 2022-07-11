@@ -1,0 +1,150 @@
+body {
+    background-color: #0A0909;
+}
+/* Nav bar section */
+.nav_bar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #0A0909;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_links{
+    color: white;
+    text-decoration: none;
+}
+.nav_links:hover{
+    color: gray;
+    text-decoration: none;
+}
+#sw_logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+.burger_icon{
+    display: none;
+}
+/* Cover Section */
+.cover_container{
+    background-image: url("../imgs/heroes_villain\(bg\).webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cover_text_container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5, 5, 5,0.6);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 200px;
+}
+.cover_title{
+    max-width: 600px;
+    background-color:rgba(217, 217, 217,0.2);
+    font-size: 30px;
+    font-weight: 900;
+    padding: 30px; 
+}
+.cover_title p{
+    margin: 0;
+}
+.cover_sub_text_container{
+    font-size: 20px;
+    padding: 30px;
+    max-width: 600px;
+    background-color: rgba(5, 5, 5,0.4);
+    margin-bottom: 200px;
+}
+
+/* Burger Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+/* Mobile CSS < 600 */ 
+@media screen and (max-width: 600px) {
+    
+    .nav_links{
+        display:none;
+    }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger_icon{
+        display: initial;
+        color: white;
+        padding-right: 30px;
+    }
+    .cover_text_container{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(5, 5, 5,0.6);
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .cover_title{
+        max-width: 400px;
+        background-color:rgba(217, 217, 217,0.2);
+        font-size: 25px;
+        font-weight: 700;
+        padding: 30px; 
+    }
+    .cover_sub_text_container{
+        font-size: 18px;
+        padding: 30px;
+        max-width: 400px;
+        background-color: rgba(5, 5, 5,0.4);
+    }
+    .sec_bar{
+        color: white;
+        margin: 10px 0px;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        background-color:rgba(217, 217, 217,0.2);
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/heroes.css">
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0ccaf9379.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="myFunction()">
+   <div class="container">
+    <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="" class="nav_links">MOVIES</a>
+                <a href="" class="nav_links">HEROES/VILLAINS</a>
+                <a href="" class="nav_links">STARS/PLANETS</a>
+                <a href="" class="nav_links">SHOPS</a>
+                <a href="" class="nav_links">NEWS</a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="" class="nav_links">MOVIES</a>
+            <a href="" class="nav_links">HEROES/VILLAINS</a>
+            <a href="#top_page"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
+            <a href="" class="nav_links">STARS/PLANETS</a>
+            <a href="" class="nav_links">SHOPS</a>
+            <a href="" class="nav_links">NEWS</a>
+            <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
+                <i id="burger_icon" class="fa fa-bars fa-2xl"></i>
+            </a>
+        </div>
+    <!-- Cover Container -->
+        <div id="top_page" class="cover_container">
+            <div class="cover_text_container">
+                <div class="cover_title">
+                    <p>JEDI AND SITH</p>
+                </div>
+                <div class="cover_sub_text_container">
+                    <p>Information about heroes and villains in Star War Series</p>
+                </div>          
+            </div>
+        </div>
+    <!-- Movies -->
+        <div class="sec_bar">
+            <p>MOVIES LIST</p>
+        </div>
+        
+        <hr class="hr_line">
+        <!-- Footer -->
+        <div class="footer">
+            <img src="imgs/star-wars-logo.png" alt="logo"/>
+            <img src="imgs/lucasfilm-logo-png-transparent.png" alt="logo"/>
+            <div class="social_container">
+                <a href="https://www.facebook.com/StarWars"><img class="social_icon" src="imgs/fb.png" alt="FB" /></a>
+                <a href="https://www.instagram.com/starwars/"><img class="social_icon" src="imgs/insta.png" alt="Instragram" /></a>
+                <a href="https://twitter.com/starwars"><img class="social_icon" src="imgs/twitter.png" alt="Twitter" /></a>
+                <a href="https://www.youtube.com/user/starwars"><img class="social_icon" src="imgs/youtube.png" alt="Youtube" /></a>
+            </div>
+        </div>
+   </div>
+
+   <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }   
+    </script>
+
+</body>
+
+</html>

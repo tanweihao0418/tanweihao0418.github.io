@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News</title>
+    <link rel="stylesheet" href="CSS/news.css">
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0ccaf9379.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="myFunction()">
+   <div class="container">
+    <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
+                <a href="" class="nav_links">HEROES/VILLAINS</a>
+                <a href="" class="nav_links">STARS/PLANETS</a>
+                <a href="" class="nav_links">SHOPS</a>
+                <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
+            <a href="" class="nav_links">HEROES/VILLAINS</a>
+            <a href="#top_page"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
+            <a href="" class="nav_links">STARS/PLANETS</a>
+            <a href="" class="nav_links">SHOPS</a>
+            <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
+            <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
+                <i id="burger_icon" class="fa fa-bars fa-2xl"></i>
+            </a>
+        </div>
+    <!-- Cover Container -->
+        <div id="top_page" class="cover_container">
+            <img src="imgs/news_bg.webp" alt=""news/>                      
+        </div>
+    <!-- News -->
+        <div class="sec_bar">
+            <p>Star Wars News</p>
+        </div>
+
+        <div class="news_bg_container">
+            <div class="row_container">
+                <div class="news_sm_container">
+                    <img href="#" src="imgs/news1.png" alt="news1" />
+                    <a class="news_title">STAR WARS INSIDE INTEL: THE INQUISITORIUS</a>
+                    <p class="news_subtext">Take a deep dive into the Empire's group of Jedi hunters.</p>
+                    <p class="author">BY : EMILY SHKOUKANI</p>
+                    <p class="date">JUNE 24, 2022</p>
+                </div>
+                <div class="news_sm_container">
+                    <img src="imgs/news2.png" alt="news2" />
+                    <a href="#" class="news_title">THE STORY BEHIND LUCASFLIM AND VOLKSWAGEN’S FANTASTIC OBIWAN KENOBI-INSPIRED VEHICLES</a>
+                    <p class="news_subtext">Lucasfilm’s Doug Chiang and VW’s Jozef Kabaň discuss bringing the ID. Buzz to the light and dark side.</p>
+                    <p class="author">BY : DAN BROOKS</p>
+                    <p class="date">JUNE 9, 2022</p>
+                </div>
+            </div>
+            <div class="row_container">
+                <div class="news_sm_container">
+                    <img src="imgs/news3.png" alt="news3" />
+                    <a href="#" class="news_title">YOU CAN’T ESCAPE POSTER POSSE’S STUNNING OBI-WAN KENOBI ART SERIES</a>
+                    <p class="news_subtext">Check out the complete poster collection and exclusive commentary from the artists themselves.</p>
+                    <p class="author">BY : DAN BROOKS</p>
+                    <p class="date">JUNE 30, 2022</p>
+                </div>
+                <div class="news_sm_container">
+                    <img src="imgs/news4.png" alt="news4" />
+                    <a href="#" class="news_title">A DIY LOLA FOR YOUR LITTLE LEIA OR LUKE</a>
+                    <p class="news_subtext">Bring the adorable droid from Obi-Wan Kenobi to life with this easy craft.</p>
+                    <p class="author">BY : KELLY KNOX</p>
+                    <p class="date">JULY 1, 2022</p>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr class="hr_line">
+        <!-- Footer -->
+        <div class="footer">
+            <img src="imgs/star-wars-logo.png" alt="logo"/>
+            <img src="imgs/lucasfilm-logo-png-transparent.png" alt="logo"/>
+            <div class="social_container">
+                <a href="https://www.facebook.com/StarWars"><img class="social_icon" src="imgs/fb.png" alt="FB" /></a>
+                <a href="https://www.instagram.com/starwars/"><img class="social_icon" src="imgs/insta.png" alt="Instragram" /></a>
+                <a href="https://twitter.com/starwars"><img class="social_icon" src="imgs/twitter.png" alt="Twitter" /></a>
+                <a href="https://www.youtube.com/user/starwars"><img class="social_icon" src="imgs/youtube.png" alt="Youtube" /></a>
+            </div>
+        </div>
+   </div>
+
+   <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }   
+    </script>
+
+</body>
+
+</html>
