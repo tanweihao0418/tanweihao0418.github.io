@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News</title>
+    <link rel="stylesheet" href="CSS/shop.css">
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0ccaf9379.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="myFunction()">
+    <div class="container">
+        <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
+                <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HEROES/VILLAINS</a>
+                <a href="" class="nav_links">STARS/PLANETS</a>
+                <a href="" class="nav_links">SHOPS</a>
+                <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
+            <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HEROES/VILLAINS</a>
+            <a href="#top_page"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
+            <a href="" class="nav_links">STARS/PLANETS</a>
+            <a href="" class="nav_links">SHOPS</a>
+            <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
+            <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
+                <i id="burger_icon" class="fa fa-bars fa-2xl"></i>
+            </a>
+        </div>
+        <!-- Cover Container -->
+        <div id="top_page" class="cover_container">
+            <div class="cover_text_container">
+                <div class="cover_title">
+                    <p>WELCOME TO LEGO STAR WAR SHOP</p>
+                </div>
+                <div class="cover_sub_text_container">
+                    <p>Browse through website below and look for the favourite your lego star wars toys</p>
+                </div>
+            </div>
+        </div>
+        <!-- Catalogue -->
+        <div class="sec_bar">
+            <p>CATALOGUE</p>
+        </div>
+        <div class="catalogue_carousel">
+            <a class="prev" onclick="minusSlides(1)">&#10094;</a>
+            <div class="item_card">
+                <a href="#sw1"><img src="imgs/xwingpd1.png" /></a>
+                <p class="cataloguetitle">LEGO X-WING Fighter</p>
+                <p class="price">RM 99.99 (50%)</p>
+                <button class="buynow_btn">Buy Now</button>
+            </div>
+
+            <div class="item_card">
+                <a href="#sw2"><img src="imgs/milleniumfalpd2.png" /></a>
+                <p class="cataloguetitle">LEGO Millenium Falcon</p>
+                <p class="price">RM 199.99 (70%)</p>
+                <button class="buynow_btn">Buy Now</button>
+            </div>
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+
+        <hr class="hr_line">
+        <!-- Footer -->
+        <div class="footer">
+            <img src="imgs/star-wars-logo.png" alt="logo" />
+            <img src="imgs/lucasfilm-logo-png-transparent.png" alt="logo" />
+            <div class="social_container">
+                <a href="https://www.facebook.com/StarWars"><img class="social_icon" src="imgs/fb.png" alt="FB" /></a>
+                <a href="https://www.instagram.com/starwars/"><img class="social_icon" src="imgs/insta.png"
+                        alt="Instragram" /></a>
+                <a href="https://twitter.com/starwars"><img class="social_icon" src="imgs/twitter.png"
+                        alt="Twitter" /></a>
+                <a href="https://www.youtube.com/user/starwars"><img class="social_icon" src="imgs/youtube.png"
+                        alt="Youtube" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }   
+    </script>
+
+</body>
+
+</html>
