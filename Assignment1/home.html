@@ -10,23 +10,25 @@
 </head>
 
 <body onresize="myFunction()">
+    <div class="container_btn">
+        <div class="btn_bcktotop"></div>
+    </div>
     <div class="container">
         <!-- Nav Bar -->
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
-                <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HEROES/VILLAINS</a>
+                <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HOME</a>
                 <a href="" class="nav_links">STARS/PLANETS</a>
                 <a href="" class="nav_links">SHOPS</a>
                 <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
             </div>
         </div>
         <div class="nav_bar">
-            <a href="https://tanweihao0418.github.io/Assignment1/home.html" class="nav_links">MOVIES</a>
             <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HEROES/VILLAINS</a>
-            <a href="#top_page"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
             <a href="" class="nav_links">STARS/PLANETS</a>
+            <a href="#top_page"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
             <a href="" class="nav_links">SHOPS</a>
             <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
             <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
@@ -53,52 +55,43 @@
             <a class="prev" onclick="minusSlides(1)">&#10094;</a>
             <div class="firstslide slide one">
                 <a href="#sw1"><img src="imgs/starwarep1.jpg" /></a>
-                <p class="movietitle">Star War I :The Phantom Menace</p>
             </div>
 
             <div class="firstslide slide two">
                 <a href="#sw2"><img src="imgs/starwarep2.jpg" /></a>
-                <p class="movietitle">Star War II :Attack Of The Clones</p>
             </div>
 
             <div class="firstslide slide three">
                 <a href="#sw3"><img src="imgs/starwarep3.jpg" /></a>
-                <p class="movietitle">Star War III :Revenge Of The Sith</p>
             </div>
 
             <div class="secondslide slide four">
                 <a href="#sw4"><img src="imgs/starwarep4.jpg" /></a>
-                <p class="movietitle">Star War IV :A New Hope</p>
             </div>
 
             <div class="secondslide slide five">
                 <a href="#sw5"><img src="imgs/starwarep5.jpg" /></a>
-                <p class="movietitle">Star War V :The Empire Strike Back</p>
             </div>
 
             <div class="secondslide slide six">
                 <a href="#sw6"><img src="imgs/starwarep6.jpg" /></a>
-                <p class="movietitle">Star War VI :Return Of The Jedi</p>
             </div>
 
             <div class="thirdslide slide seven">
                 <a href="#sw7"><img src="imgs/starwarep7.jpg" /></a>
-                <p class="movietitle">Star War VII :The Force Awaken</p>
             </div>
 
             <div class="thirdslide slide eight">
                 <a href="#sw8"><img src="imgs/starwarep8.jpg" /></a>
-                <p class="movietitle">Star War VIII :The Last Jedi</p>
             </div>
 
             <div class="thirdslide slide nine">
                 <a href="#sw9"><img src="imgs/starwarep9.jpg" /></a>
-                <p class="movietitle">Star War IX :The Rise Of Skywalker</p>
             </div>
 
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div style="text-align:center">
+        <div style="text-align:center;margin-top: 35px;">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -255,7 +248,7 @@
         </div>
         <!-- Footer -->
         <div class="footer">
-            <img src="imgs/star-wars-logo.png" alt="logo" />
+            <img class="sw_logo" src="imgs/star-wars-logo.png" alt="logo" />
             <img src="imgs/lucasfilm-logo-png-transparent.png" alt="logo" />
             <div class="social_container">
                 <a href="https://www.facebook.com/StarWars"><img class="social_icon" src="imgs/fb.png" alt="FB" /></a>
