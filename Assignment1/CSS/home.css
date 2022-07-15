@@ -4,6 +4,7 @@ body {
 }
 .btn_bcktotop{  
     position: fixed;
+    z-index: 2;
     bottom: 100px;
     right: 35px;
     width: 50px;
@@ -119,6 +120,7 @@ body {
 .movie_carousel img{
     max-width: 300px;
     max-height: 500px;
+    z-index: 1;
 }
 .slide{
     display: flex;
