@@ -243,6 +243,7 @@ hr.hr_line{
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
+        padding: 0px 50px;
     }
     .movie_carousel{
         display: flex;
@@ -271,6 +272,7 @@ hr.hr_line{
         background-color: rgba(5, 5, 5,0.6);
         justify-content: center;
         align-items: center;
+        max-width: 500px;
         color: white;
     }
     .cover_title{
