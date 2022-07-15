@@ -1,12 +1,23 @@
 body {
     background-color: #0A0909;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn_bcktotop{  
+    position: fixed;
+    bottom: 100px;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgba(217, 217, 217,0.2);
+    color: white;
+}
+.container{
+    max-width: 3000px;
 }
 /* Nav bar section */
 .nav_bar{
     display: flex;
-    z-index: 1;
-    position: sticky;
-    top: 0;
     background-color: #0A0909;
     justify-content: space-around;
     align-items: center;
@@ -15,6 +26,7 @@ body {
     color: white;
     text-decoration: none;
     word-wrap:break-word;
+    font-size: 18px;
     width: 150px;
 }
 
@@ -140,15 +152,25 @@ body {
     color: white;
 }
 .character_info{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+}
+.character_info1{
+    font-size: 22px;
+    color: lightblue;
+}
+.character_info2{
+    font-size: 22px;
+    color: lightcoral;
 }
 .jedi{
     color: cyan;
+    font-size: 23px;
     font-weight: bolder;
 }
 .sith{
     color: red;
+    font-size: 23px;
     font-weight: bolder;
 }
 
@@ -202,8 +224,9 @@ body {
         justify-content: space-around;
     }
     .footer img {
+        padding-top: 10px;
         max-width: 150px;
-        max-height: 150px;
+        max-height: 113px;
     }
     .social_container{
         display: flex;
@@ -241,12 +264,12 @@ body {
     .cover_title{
         max-width: 400px;
         background-color:rgba(217, 217, 217,0.2);
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 700;
         padding: 30px 0px; 
     }
     .cover_sub_text_container{
-        font-size: 22px;
+        font-size: 24px;
         padding: 30px 0px;
         max-width: 400px;
         background-color: rgba(5, 5, 5,0.4);
@@ -254,7 +277,7 @@ body {
     .sec_bar{
         color: white;
         margin: 10px 0px;
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 900;
         text-align: center;
         background-color:rgba(217, 217, 217,0.2);
@@ -287,12 +310,12 @@ body {
     .sides_title{
         text-align: center;
         color: white;
-        font-size: 25px;
+        font-size: 28px;
         font-weight: bolder;
     }
     .sides_text{
         color: white;
-        font-size: 18px;
+        font-size: 22px;
     }
 /* Character */
     .characters_bg_container{
@@ -324,7 +347,7 @@ body {
     }
     .character_name{
         text-align: center;
-        font-size: 22px;
+        font-size: 27px;
         font-weight: 600;
         color: white;
     }
