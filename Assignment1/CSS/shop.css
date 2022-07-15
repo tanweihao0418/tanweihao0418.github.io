@@ -82,6 +82,7 @@ body {
 }
 
 .cover_title {
+    text-align: center;
     background-color: rgba(217, 217, 217, 0.2);
     font-size: 30px;
     font-weight: 900;
@@ -94,7 +95,7 @@ body {
 }
 
 .cover_sub_text_container {
-    font-size: 20px;
+    font-size: 23px;
     padding: 30px;
     background-color: rgba(5, 5, 5, 0.4);
     margin-bottom: 200px;
@@ -288,6 +289,7 @@ body {
     }
     
     .cover_title {
+        text-align: center;
         background-color: rgba(217, 217, 217, 0.2);
         font-size: 26px;
         max-width: 300px;
