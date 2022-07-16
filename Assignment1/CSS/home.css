@@ -113,6 +113,11 @@ body {
     align-items: center;
     margin-bottom: 50px;
 }
+.movie_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .movie_carousel{
     display: flex;
     max-width: 1600px;
@@ -243,7 +248,6 @@ hr.hr_line{
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
-        padding: 0px 50px;
     }
     .movie_carousel{
         display: flex;

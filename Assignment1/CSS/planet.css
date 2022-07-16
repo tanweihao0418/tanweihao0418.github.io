@@ -159,8 +159,6 @@ body {
 }
 .text_container{
     padding: 10px;
-    width: 480px;
-    height: 600px;
 }
 .title{
     text-align: center;
@@ -169,11 +167,11 @@ body {
     color: white;
 }
 .subtext{
-    font-size: 18px;
+    font-size: 20px;
     color: white;
 }
 .subtext1{
-    font-size: 22px;
+    font-size: 24px;
     color: bisque;
 }
 
@@ -358,20 +356,19 @@ body {
 .text_container{
     padding: 10px;
     max-width: 340px;
-    max-height: 800px;
 }
 .title{
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 27px;
     color: white;
 }
 .subtext{
-    font-size: 18px;
+    font-size: 21px;
     color: white;
 }
 .subtext1{
-    font-size: 20px;
+    font-size: 24px;
     color: bisque;
 }
 }
