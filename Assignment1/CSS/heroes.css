@@ -118,7 +118,7 @@ body {
 }
 .sides_text{
     color: white;
-    font-size: 22px;
+    font-size: 25px;
 }
 /* Characters */
 .characters_bg_container{
@@ -152,15 +152,15 @@ body {
     color: white;
 }
 .character_info{
-    font-size: 18px;
+    font-size: 27px;
     color: white;
 }
 .character_info1{
-    font-size: 22px;
+    font-size: 25px;
     color: lightblue;
 }
 .character_info2{
-    font-size: 22px;
+    font-size: 25px;
     color: lightcoral;
 }
 .jedi{
@@ -265,12 +265,12 @@ body {
     .cover_title{
         max-width: 350px;
         background-color:rgba(217, 217, 217,0.2);
-        font-size: 27px;
+        font-size: 30px;
         font-weight: 700;
         padding: 30px 0px; 
     }
     .cover_sub_text_container{
-        font-size: 24px;
+        font-size: 27px;
         padding: 30px 0px;
         max-width: 350px;
         background-color: rgba(5, 5, 5,0.4);
@@ -311,12 +311,12 @@ body {
     .sides_title{
         text-align: center;
         color: white;
-        font-size: 28px;
+        font-size: 30px;
         font-weight: bolder;
     }
     .sides_text{
         color: white;
-        font-size: 22px;
+        font-size: 26px;
     }
 /* Character */
     .characters_bg_container{
@@ -348,15 +348,14 @@ body {
     }
     .character_name{
         text-align: center;
-        font-size: 27px;
+        font-size: 30px;
         font-weight: 600;
         color: white;
     }
     .character_info{
-        font-size: 18px;
+        font-size: 25px;
         color: white;
     }
-
 
 
     .footer{
