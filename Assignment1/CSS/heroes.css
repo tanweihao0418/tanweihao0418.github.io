@@ -305,7 +305,6 @@ body {
     .sides_text_container{
         background-color:rgba(217, 217, 217,0.2);
         max-width: 500px;
-        max-height: 500px;
         padding: 10px;
     }
     .sides_title{
