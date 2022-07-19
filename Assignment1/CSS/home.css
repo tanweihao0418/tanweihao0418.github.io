@@ -118,10 +118,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .movie_carousel{
     display: flex;
-    max-width: 1600px;
+    max-width: 1300px;
 }
 .movie_carousel img{
     max-width: 300px;
@@ -134,8 +135,10 @@ body {
     text-align: center;
     max-width: 300px;
     max-height: 400px;
-    margin-right: 200px;
     margin-top: 30px;
+}
+.slick-slide {
+    margin-right: 30px;
 }
 
 hr.hr_line{

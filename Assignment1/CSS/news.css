@@ -76,6 +76,7 @@ body {
     flex-direction: column;
     max-width: 500px;
     background-color:rgba(217, 217, 217,0.2);
+    margin-right: 20px;
 }
 
 .news_title{

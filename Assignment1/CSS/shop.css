@@ -145,12 +145,14 @@ body {
 
 .catalogue_carousel {
     display: flex;
-    max-width: 1600px;
+    max-width: 1300px;
 }
-
+.slick-slide {
+    margin-right: 35px;
+}
 .catalogue_carousel img {
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
+    height: 300px;
 }
 
 .item_card {
