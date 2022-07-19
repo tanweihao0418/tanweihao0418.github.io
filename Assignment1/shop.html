@@ -7,12 +7,16 @@
     <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f0ccaf9379.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/slick/slick.css" />
     <!-- <link rel="stylesheet" type="text/css" href="CSS/slick/slick-theme.css"/> -->
 </head>
 
 <body onresize="myFunction()">
-    <a href="#top_page"><div on class="btn_bcktotop"><p style="color: white;text-align: center;">Top</p></div></a>
+    <a href="#top_page">
+        <div on class="btn_bcktotop">
+            <p style="color: white;text-align: center;">Top</p>
+        </div>
+    </a>
     <div class="container">
         <!-- Nav Bar -->
         <div id="myNav" class="overlay">
@@ -28,7 +32,8 @@
         <div class="nav_bar">
             <a href="https://tanweihao0418.github.io/Assignment1/heroes.html" class="nav_links">HEROES/VILLAINS</a>
             <a href="https://tanweihao0418.github.io/Assignment1/planet.html" class="nav_links">STARS/PLANETS</a>
-            <a href="https://tanweihao0418.github.io/Assignment1/home.html"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
+            <a href="https://tanweihao0418.github.io/Assignment1/home.html"><img id="sw_logo"
+                    src="imgs/star-wars-logo.png" /></a>
             <a href="https://tanweihao0418.github.io/Assignment1/shop.html" class="nav_links">SHOPS</a>
             <a href="https://tanweihao0418.github.io/Assignment1/news.html" class="nav_links">NEWS</a>
             <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
@@ -53,94 +58,104 @@
         <p class="sale_text">Items On <span style="font-style: italic;">Sale</span></p>
         <div class="catalogue_container">
             <div class="container1">
-            <button type='button' class='slick-prev pull-left back'></button>
-            <div class="catalogue_carousel">
-                <div class="item_card">
-                    <a href="#sw1"><img src="imgs/xwingpd1.png" /></a>
-                    <p class="cataloguetitle">LEGO X-WING Fighter</p>
-                    <p class="price">RM 99.99 (50%)</p>
-                    <button class="buynow_btn">Buy Now</button>
+                <button type='button' class='slick-prev pull-left back'></button>
+                <div class="catalogue_carousel">
+                    <div class="item_card">
+                        <a href="#sw1"><img src="imgs/xwingpd1.png" /></a>
+                        <p class="cataloguetitle">LEGO X-WING Fighter</p>
+                        <p class="price">RM 99.99 (50%)</p>
+                        <button class="buynow_btn">Buy Now</button>
+                    </div>
+
+                    <div class="item_card">
+                        <a href="#sw2"><img src="imgs/milleniumfalpd2.png" /></a>
+                        <p class="cataloguetitle">LEGO Millenium Falcon</p>
+                        <p class="price">RM 199.99 (70%)</p>
+                        <button class="buynow_btn">Buy Now</button>
+                    </div>
+
+                    <div class="item_card">
+                        <a href="#sw3"><img src="imgs/deathstar_pd4.png" /></a>
+                        <p class="cataloguetitle">LEGO Death Star</p>
+                        <p class="price">RM 439.99 (30%)</p>
+                        <button class="buynow_btn">Buy Now</button>
+                    </div>
+
+
+                    <div class="item_card">
+                        <a href="#sw5"><img src="imgs/majorvonrej_pd6.png" /></a>
+                        <p class="cataloguetitle">LEGO Major Vonrej</p>
+                        <p class="price">RM 299.99 (20%)</p>
+                        <button class="buynow_btn">Buy Now</button>
+                    </div>
+
+                    <div class="item_card">
+                        <a href="#sw6"><img src="imgs/star_destroyerpd3.png" /></a>
+                        <p class="cataloguetitle">LEGO Star Destroyer</p>
+                        <p class="price">RM 599.99 (20%)</p>
+                        <button class="buynow_btn">Buy Now</button>
+                    </div>
+
                 </div>
-    
-                <div class="item_card">
-                    <a href="#sw2"><img src="imgs/milleniumfalpd2.png" /></a>
-                    <p class="cataloguetitle">LEGO Millenium Falcon</p>
-                    <p class="price">RM 199.99 (70%)</p>
-                    <button class="buynow_btn">Buy Now</button>
-                </div>
-    
-                <div class="item_card">
-                    <a href="#sw3"><img src="imgs/deathstar_pd4.png" /></a>
-                    <p class="cataloguetitle">LEGO Death Star</p>
-                    <p class="price">RM 439.99 (30%)</p>
-                    <button class="buynow_btn">Buy Now</button>
-                </div>
-    
-    
-                <div class="item_card">
-                    <a href="#sw5"><img src="imgs/majorvonrej_pd6.png" /></a>
-                    <p class="cataloguetitle">LEGO Major Vonrej</p>
-                    <p class="price">RM 299.99 (20%)</p>
-                    <button class="buynow_btn">Buy Now</button>
-                </div>
-    
-                <div class="item_card">
-                    <a href="#sw6"><img src="imgs/star_destroyerpd3.png" /></a>
-                    <p class="cataloguetitle">LEGO Star Destroyer</p>
-                    <p class="price">RM 599.99 (20%)</p>
-                    <button class="buynow_btn">Buy Now</button>
-                </div>
-                
+                <button type='button' class='slick-next pull-right next'></button>
             </div>
-            <button type='button' class='slick-next pull-right next'></button>
-            </div>         
 
         </div>
-        
+
         <hr class="hr_line">
 
         <p class="sale_text">Items List</p>
-        
+
         <div class="item_container">
-            <div class="item_card1">
-                <a href="#sw7"><img src="imgs/atst_pd7.png" /></a>
-                <p class="cataloguetitle">LEGO AT-ST</p>
-                <p class="price">RM 199.99</p>
-                <button class="buynow_btn">Buy Now</button>
-            </div>
-            
-            <div class="item_card1">
-                <a href="#sw4"><img src="imgs/republictank_pd5.png" /></a>
-                <p class="cataloguetitle">LEGO Republic Tank</p>
-                <p class="price">RM 329.99</p>
-                <button class="buynow_btn">Buy Now</button>
+            <div class="item_container1">
+                <div class="item_card1">
+                    <a href="#sw7"><img src="imgs/atst_pd7.png" /></a>
+                    <p class="cataloguetitle">LEGO AT-ST</p>
+                    <p class="price">RM 199.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
+
+                <div class="item_card1">
+                    <a href="#sw4"><img src="imgs/republictank_pd5.png" /></a>
+                    <p class="cataloguetitle">LEGO Republic Tank</p>
+                    <p class="price">RM 329.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
+
+                <div class="item_card1">
+                    <a href="#sw8"><img src="imgs/imperialshuttle_pd8.png" /></a>
+                    <p class="cataloguetitle">LEGO Imperial Shuttle</p>
+                    <p class="price">RM 229.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
             </div>
 
-            <div class="item_card1">
-                <a href="#sw8"><img src="imgs/imperialshuttle_pd8.png" /></a>
-                <p class="cataloguetitle">LEGO Imperial Shuttle</p>
-                <p class="price">RM 229.99</p>
-                <button class="buynow_btn">Buy Now</button>
-            </div>
 
-            <div class="item_card1">
-                <a href="#sw9"><img src="imgs/razorcrest_pd9.png" /></a>
-                <p class="cataloguetitle">LEGO Razor Crest</p>
-                <p class="price">RM 419.99</p>
-                <button class="buynow_btn">Buy Now</button>
-            </div>
         </div>
 
         <div class="item_container">
-            <div class="item_card1">
-                <a href="#sw10"><img src="imgs/tie_fighter_pd10.png" /></a>
-                <p class="cataloguetitle">LEGO TIE Fighter</p>
-                <p class="price">RM 199.99</p>
-                <button class="buynow_btn">Buy Now</button>
+            <div class="item_container1">
+                <div class="item_card1">
+                    <a href="#sw9"><img src="imgs/razorcrest_pd9.png" /></a>
+                    <p class="cataloguetitle">LEGO Razor Crest</p>
+                    <p class="price">RM 419.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
+                <div class="item_card1">
+                    <a href="#sw10"><img src="imgs/tie_fighter_pd10.png" /></a>
+                    <p class="cataloguetitle">LEGO TIE Fighter</p>
+                    <p class="price">RM 199.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
+                <div class="item_card1">
+                    <a href="#sw8"><img src="imgs/star_destroyerpd3.png" /></a>
+                    <p class="cataloguetitle">LEGO Star Destroyer</p>
+                    <p class="price">RM 599.99</p>
+                    <button class="buynow_btn">Buy Now</button>
+                </div>
             </div>
-
         </div>
-        
+
 
 
         <!-- Footer -->
@@ -177,15 +192,15 @@
             infinite: false,
             slidesToShow: 3,
             slidesToScroll: 2,
-            prevArrow:$(".back"),
-            nextArrow:$(".next"),
+            prevArrow: $(".back"),
+            nextArrow: $(".next"),
             responsive: [
                 {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
             ]
         });
