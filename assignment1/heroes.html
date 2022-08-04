@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Heroes And Villains</title>
+    <link rel="stylesheet" href="CSS/heroes.css">
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0ccaf9379.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="myFunction()">
+    <div class="container">
+        <a href="#top_page"><div on class="btn_bcktotop"><p style="color: white;text-align: center;">Top</p></div></a>
+        <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="heroes.html">Heroes/Villain</a>
+                <a href="planet.html" >STARS/PLANETS</a>
+                <a href="shop.html" >SHOPS</a>
+                <a href="news.html">NEWS</a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="heroes.html" class="nav_links">HEROES/VILLAINS</a>
+            <a href="planet.html" class="nav_links">STARS/PLANETS</a>
+            <a href="index.html"><img id="sw_logo" src="imgs/star-wars-logo.png" /></a>
+            <a href="shop.html" class="nav_links">SHOPS</a>
+            <a href="news.html" class="nav_links">NEWS</a>
+            <a href="javascript:void(0);" class="burger_icon" onclick="openNav()">
+                <i id="burger_icon" class="fa fa-bars fa-2xl"></i>
+            </a>
+        </div>
+        <!-- Cover Container -->
+        <div id="top_page" class="cover_container">
+            <div class="cover_text_container">
+                <div class="cover_title">
+                    <p>JEDI AND SITH</p>
+                </div>
+                <div class="cover_sub_text_container">
+                    <p>Information about heroes and villains in Star War Series</p>
+                </div>
+            </div>
+        </div>
+        <!-- JEDI/VILLAINS -->
+        <div class="sec_bar">
+            <p>SIDES</p>
+        </div>
+
+        <div class="sides_container">
+            <div class="sides_sm_container">
+                <img src="imgs/jedi_bg.png" alt="jedi" />
+                <div class="sides_text_container">
+                    <p class="sides_title" style="color: cyan;">JEDI</p>
+                    <p class="sides_text">A Jedi, also known by the title of Lord Jedi in ancient times, was a devotee
+                        to the ways of the Jedi Order, an ancient order of protectors united by their ability to harness
+                        the power of the Force. Adhering to a doctrine that favored the light side of the Force, the
+                        Jedi aspired to attain a state of inner tranquility through calmness and meditation while
+                        avoiding emotions affiliated with the dark side of the Force, such as anger and hatred.</p>
+                </div>
+            </div>
+            <div class="sides_sm_container">
+                <img src="imgs/sith_bg.png" alt="sith" />
+                <div class="sides_text_container">
+                    <p class="sides_title" style="color: red;">SITH</p>
+                    <p class="sides_text">The Sith, also referred to as the Sith Order, was an ancient religious order
+                        of Force-wielders devoted to the dark side of the Force. Driven by their emotions, including
+                        hate, anger, and greed, the Sith were deceptive and obsessed with gaining power no matter the
+                        cost.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr_line">
+
+        <div class="sec_bar">
+            <p>Characters</p>
+        </div>
+
+        <div class="characters_bg_container">
+            <div class="row_character_container">
+                <div class="character_sm_container">
+                    <img src="imgs/anakin.png" alt="anakin" />
+                    <div class="character_info_container">
+                        <p class="character_name">ANAKIN SKYWALKER</p>
+                        <p class="character_info">Affliations : <span class="jedi">Jedi</span></p>
+                        <p class="character_info">Born : Tatoonie</p>
+                        <p class="character_info">Height : 1.88m</p>
+                        <p class="character_info">Appearances : Return of the Jedi, The Phantom Menace,Attack of the
+                            Clones,Revenge of the Sith</p>
+                        <p class="character_info1">Discovered as a slave on Tatooine by Qui-Gon Jinn and Obi-Wan Kenobi,
+                            Anakin Skywalker had the potential to become one of the most powerful Jedi ever, and was
+                            believed by some to be the prophesied Chosen One who would bring balance to the Force. A
+                            hero of the Clone Wars, Anakin was caring and compassionate, but also had a fear of loss
+                            that would prove to be his downfall</p>
+                        <p class="character_info"> Weapon : </p>
+                        <img class="lightsaber" src="imgs/AnakinLightsaber.png" alt="anakin_lightsaber" />
+                    </div>
+                </div>
+                <div class="character_sm_container">
+                    <img src="imgs/obiwan.png" alt="obiwan" />
+                    <div class="character_info_container">
+                        <p class="character_name">OBI-WAN KENOBI</p>
+                        <p class="character_info">Affliations : <span class="jedi">Jedi</span></p>
+                        <p class="character_info">Born : Stewjon</p>
+                        <p class="character_info">Height : 1.8m</p>
+                        <p class="character_info">Appearances : A New Hope, The Phantom Menace,Attack of the
+                            Clones,Revenge of the Sith</p>
+                        <p class="character_info1">A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in
+                            the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army
+                            during the Clone Wars, and guided Luke Skywalker as a mentor.</p>
+                        <p class="character_info"> Weapon : </p>
+                        <img class="lightsaber" src="imgs/obiwan_lightsaber.png" alt="obiwan_lightsaber" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_character_container">
+                <div class="character_sm_container">
+                    <img src="imgs/maul.png" alt="maul" />
+                    <div class="character_info_container">
+                        <p class="character_name">DARTH MAUL</p>
+                        <p class="character_info">Affliations : <span class="sith">Sith</span></p>
+                        <p class="character_info">Born : Dathomir</p>
+                        <p class="character_info">Height : 1.8m</p>
+                        <p class="character_info">Appearances : The Phantom Menace</p>
+                        <p class="character_info2">A deadly, agile Sith Lord trained by the evil Darth Sidious, Darth
+                            Maul was a formidable warrior and scheming mastermind. He wielded an intimidating
+                            double-bladed lightsaber and fought with a menacing ferocity. Though he fell in battle
+                            against Obi-Wan Kenobi, the Zabrak from Dathomir would prove to be much harder to destroy
+                            than originally believed.</p>
+                        <p class="character_info"> Weapon : </p>
+                        <img class="lightsaber" src="imgs/DarthMaulDoubleLightsaber1.png" alt="darthmaul_lightsaber" />
+                    </div>
+                </div>
+                <div class="character_sm_container">
+                    <img src="imgs/Darth_Sidious.webp" alt="darth sidious" />
+                    <div class="character_info_container">
+                        <p class="character_name">DARTH SIDIOUS</p>
+                        <p class="character_info">Affliations : <span class="sith">Sith</span></p>
+                        <p class="character_info">Born : Naboo</p>
+                        <p class="character_info">Height : 1.73m</p>
+                        <p class="character_info">Appearances : Star Wars: The Empire Strikes Back, Star Wars: Return of
+                            the Jedi, Star Wars: The Phantom Menace, Star Wars: Attack of the Clones, Star Wars: Revenge
+                            of the Sith, Star Wars: The Rise of Skywalker, Star Wars Rebels, Star Wars: The Clone Wars
+                        </p>
+                        <p class="character_info2">The dark side of the Force is a pathway to many abilities some
+                            consider to be unnatural, and Sheev Palpatine is the most infamous follower of its
+                            doctrines. Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and
+                            destroyed the Jedi Order.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <img src="imgs/star-wars-logo.png" alt="logo" />
+            <img src="imgs/lucasfilm-logo-png-transparent.png" alt="logo" />
+            <div class="social_container">
+                <a href="https://www.facebook.com/StarWars"><img class="social_icon" src="imgs/fb.png" alt="FB" /></a>
+                <a href="https://www.instagram.com/starwars/"><img class="social_icon" src="imgs/insta.png"
+                        alt="Instragram" /></a>
+                <a href="https://twitter.com/starwars"><img class="social_icon" src="imgs/twitter.png"
+                        alt="Twitter" /></a>
+                <a href="https://www.youtube.com/user/starwars"><img class="social_icon" src="imgs/youtube.png"
+                        alt="Youtube" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }   
+    </script>
+
+</body>
+
+</html>

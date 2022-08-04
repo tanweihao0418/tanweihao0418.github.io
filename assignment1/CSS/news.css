@@ -1,0 +1,235 @@
+body {
+    background-color: #0A0909;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif
+}
+.btn_bcktotop{  
+    position: fixed;
+    bottom: 100px;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgba(217, 217, 217,0.2);
+    color: white;
+}
+.container{
+    max-width: 3000px;
+}
+/* Nav bar section */
+.nav_bar{
+    display: flex;
+    background-color: #0A0909;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_links{
+    color: white;
+    text-decoration: none;
+    word-wrap:break-word;
+    font-size: 18px;
+    width: 150px;
+}
+.nav_links:hover{
+    color: gray;
+    text-decoration: none;
+}
+#sw_logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+.burger_icon{
+    display: none;
+}
+/* Cover Section */
+.cover_container{
+    display: flex;
+    justify-content: center;
+    background-image: url("../imgs/star-wars-backgrounds-25.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.sec_bar{
+    color: white;
+    margin: 10px 0px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    background-color:rgba(217, 217, 217,0.2);
+}
+.sec_bar p{
+    margin: 0;
+    padding: 20px 0px;
+}
+/* News */
+.news_bg_container{
+    display: flex;
+    flex-direction: column;
+}
+.row_container{
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+}
+.news_sm_container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color:rgba(217, 217, 217,0.2);
+    margin-right: 20px;
+}
+
+.news_title{
+    font-size: 27px;
+    color: white;
+    font-weight: 300;
+    margin: 10px 0px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.news_title:hover{
+    color: gray;
+}
+
+.news_subtext{
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.author{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.date{
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    padding-left: 20px;
+}
+/* Burger Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  /* Footer */
+.footer{
+    display: flex;
+    margin-top: 300px;
+    background-color: rgba(217, 217, 217,0.2);
+    justify-content: space-around;
+}
+.footer img {
+    max-width: 150px;
+    max-height: 113px;
+}
+.social_container{
+    display: flex;
+    align-items: center; 
+}
+.social_container img{
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+/* Mobile CSS < 600 */ 
+@media screen and (max-width: 600px) {
+    
+    .nav_links{
+        display:none;
+    }
+    .cover_container{
+        display: flex;
+        justify-content: center;
+        background-image: url("../imgs/star-wars-backgrounds-25.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    .cover_container img{
+        max-width: 450px;
+    }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .row_container{
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+    .news_sm_container{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        background-color:rgba(217, 217, 217,0.2);
+        margin: 20px;
+    }
+    .burger_icon{
+        display: initial;
+        color: white;
+        padding-right: 30px;
+    }
+    
+    .sec_bar{
+        color: white;
+        margin: 10px 0px;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+        background-color:rgba(217, 217, 217,0.2);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+        align-items: center;
+        background-color: rgba(217, 217, 217,0.2);
+        justify-content: space-around;
+    }
+    .social_container{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+}
