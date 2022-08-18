@@ -279,11 +279,85 @@ body {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1420px) {
+    .catalogue_carousel {
+        display: flex;
+        max-width: 1000px;
+    }
+    .slick-slide {
+        margin-right: 35px;
+    }
+    .catalogue_carousel img {
+        max-width: 300px;
+        height: 300px;
+    }
+    
+    .item_card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        max-height: 700px;
+        margin-bottom: 50px;
+    }
+    .item_container1{
+        display: flex;
+        justify-content: center;
+        max-width: 800px;
+    }
 
+}
 
-
-/* Mobile CSS < 600 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1120px) {
+    .catalogue_carousel {
+        display: flex;
+        max-width: 600px;
+    }
+    .slick-slide {
+        margin-right: 35px;
+    }
+    .catalogue_carousel img {
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    .item_card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 200px;
+        max-height: 500px;
+        margin-bottom: 50px;
+    }
+    .item_card1 img {
+        max-width: 180px;
+        height: 180px;
+    }
+    .item_container1{
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+    }
+    .item_card1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        max-width: 350px;
+        max-height: 700px;
+        margin: 10px;
+    }
+}
+/* Mobile CSS < 715 */
+@media screen and (max-width: 715px) {
 
     .nav_links {
         display: none;
@@ -297,7 +371,7 @@ body {
         background-color: rgba(5, 5, 5, 0.6);
         color: white;
         text-align: center;
-        max-width: 500px;
+        width: 100%;
         padding-top: 150px;
     }
     
@@ -356,8 +430,8 @@ body {
     }
 
     .catalogue_carousel img {
-        width: 300px;
-        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
     }
 
     .item_card {

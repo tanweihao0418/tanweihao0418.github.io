@@ -236,6 +236,100 @@ body {
         margin-right: 10px;
     }
 
+@media screen and (max-width: 1110px) {
+    .cover_text_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .cover_title{
+        max-width: 350px;
+        background-color:rgba(217, 217, 217,0.2);
+        font-size: 30px;
+        font-weight: 700;
+        padding: 30px 0px; 
+    }
+    .cover_sub_text_container{
+        font-size: 27px;
+        padding: 30px 0px;
+        max-width: 350px;
+        background-color: rgba(5, 5, 5,0.4);
+    }
+    .sides_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .sides_sm_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+    }
+    .sides_sm_container img{
+        max-width: 400px;
+        max-height: 400px;
+        margin: 20px;
+    }
+
+    .sides_text_container{
+        background-color:rgba(217, 217, 217,0.2);
+        max-width: 500px;
+        padding: 10px;
+    }
+    .sides_title{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .sides_text{
+        color: white;
+        font-size: 26px;
+    }
+    .characters_bg_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .row_character_container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .character_sm_container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .character_sm_container img{
+        max-height: 400px;
+        max-width: 200px;
+    }
+    .character_info_container{
+        max-width: 600px;
+        background-color:rgba(217, 217, 217,0.2);
+        padding: 20px;
+    }
+    .lightsaber{
+        max-width: 500px;
+    }
+    .character_name{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+    }
+    .character_info{
+        font-size: 25px;
+        color: white;
+    }
+}
+
 /* Mobile CSS < 600 */ 
 @media screen and (max-width: 600px) {
     
@@ -259,7 +353,6 @@ body {
         justify-content: center;
         align-items: center;
         color: white;
-        max-width: 500px;
     }
     .cover_title{
         max-width: 350px;
@@ -286,6 +379,7 @@ body {
     .sides_container{
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 30px;
         margin-bottom: 80px;
     }
