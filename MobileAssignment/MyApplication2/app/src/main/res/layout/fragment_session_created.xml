@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_club">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/friend_ico"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/friend_smaller" />
+
+            <ImageView
+                android:id="@+id/club_ico"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/club_smaller" />
+
+            <ImageView
+                android:id="@+id/home_ico"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/home_smaller" />
+
+
+            <ImageView
+                android:id="@+id/scoreboard_ico"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/scoreboard_smaller" />
+
+            <ImageView
+                android:id="@+id/profile_ico"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/person_smaller" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:text="Session Created"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:drawableStart="@drawable/location_smaller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Sungai Chua Badminton Court" />
+
+            <TextView
+                android:drawableStart="@drawable/calendar_smaller"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="7/8/2022 ,Tuesday" />
+
+            <TextView
+                android:drawableStart="@drawable/dollar_smaller"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="RM10" />
+
+            <TextView
+                android:drawableStart="@drawable/player_smaller"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="8 Players" />
+
+            <TextView
+                android:drawableStart="@drawable/level_smaller"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Beginner-Advance" />
+
+            <TextView
+                android:drawableStart="@drawable/note_smaller"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|start"
+                android:layout_marginBottom="20dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="Any person are welcomed to join our badminton session and have fun" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Session ID : 99122" />
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Done" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/calendar_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/club_smaller.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/dollar_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/friend_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/home_smaller.xml" value="0.3635" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/level_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/location_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/lock_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/note_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/offline.xml" value="0.312" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/online.xml" value="0.312" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/person_medium.xml" value="0.2995" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/person_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/player_smaller.xml" value="0.2965" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/scoreboard_smaller.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/shape.xml" value="0.2765" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/shape1.xml" value="0.2995" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/shape2.xml" value="0.2995" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/shape3.xml" value="0.2995" />
+        <entry key="..\:/MyApplication2/app/src/main/res/drawable/shape4.xml" value="0.2995" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.22789115646258504" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/club_leaderboard1.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/dashboard.xml" value="0.33" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_club_leaderboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_club_leaderboard1.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_club_memberlist.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_create_scoreboard.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_create_scoreboard1.xml" value="0.25" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_create_scoreboard2.xml" value="0.29322916666666665" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_create_session.xml" value="0.353125" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_friendlist.xml" value="0.33" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_host_club.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_join_club.xml" value="0.271286231884058" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_join_session.xml" value="0.25" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_match_history.xml" value="0.33" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_my_club.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_own_club.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_profile.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/fragment_session_created.xml" value="0.3625" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/login.xml" value="0.27291666666666664" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/profile.xml" value="0.1762917933130699" />
+        <entry key="..\:/MyApplication2/app/src/main/res/layout/signup.xml" value="0.25" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/badminton_background.xml" value="0.24" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/friend_smaller.xml" value="0.364" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/home_smaller.xml" value="0.3665" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/person_smaller.xml" value="0.3825" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/rounded_bg.xml" value="0.2495" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/dashboard.xml" value="0.5" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_blank.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/profile.xml" value="0.3625" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/signup.xml" value="0.22" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/friend.xml" value="0.1875" />
+        <entry key="..\:/Users/tan2/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/friend_round.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

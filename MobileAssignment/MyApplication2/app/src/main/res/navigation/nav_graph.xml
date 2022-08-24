@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signup_fragment">
+
+    <fragment
+        android:id="@+id/signup_fragment"
+        android:name="com.example.myapplication.SignUp"
+        android:label="fragment_signup"
+        tools:layout="@layout/signup">
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.myapplication.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signup_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboard_fragment"
+        android:name="com.example.myapplication.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/dashboard" >
+        <action
+            android:id="@+id/action_dashboard_to_join_session"
+            app:destination="@id/join_session" />
+        <action
+            android:id="@+id/action_dashboard_to_join_club"
+            app:destination="@id/join_club" />
+
+<!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/friendlist"
+        android:name="com.example.myapplication.friendlist"
+        android:label="fragment_friendlist"
+        tools:layout="@layout/fragment_friendlist" >
+
+        <action
+            android:id="@+id/action_friendlist_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/myClub"
+        android:name="com.example.myapplication.my_club"
+        android:label="fragment_my_club"
+        tools:layout="@layout/fragment_my_club" >
+
+        <action
+            android:id="@+id/action_myclub_to_ownclub"
+            app:destination="@id/host_club" />
+
+        <action
+            android:id="@+id/action_myclub_to_joinedclub"
+            app:destination="@id/own_club" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/join_club"
+        android:name="com.example.myapplication.join_club"
+        android:label="fragment_join_club"
+        tools:layout="@layout/fragment_join_club" >
+
+        <action
+            android:id="@+id/action_joinclub_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/create_session"
+        android:name="com.example.myapplication.create_session"
+        android:label="fragment_create_session"
+        tools:layout="@layout/fragment_create_session" >
+
+        <action
+            android:id="@+id/action_session_to_created_session"
+            app:destination="@id/session_created" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.myapplication.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_profile_to_match_history"
+            app:destination="@id/match_history" />
+        <action
+            android:id="@+id/action_profile_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/session_created"
+        android:name="com.example.myapplication.session_created"
+        android:label="fragment_session_created"
+        tools:layout="@layout/fragment_session_created" >
+
+        <action
+            android:id="@+id/action_created_session_home"
+            app:destination="@id/dashboard_fragment" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/match_history"
+        android:name="com.example.myapplication.match_history"
+        android:label="fragment_match_history"
+        tools:layout="@layout/fragment_match_history" >
+
+        <action
+            android:id="@+id/action_match_history_to_profile"
+            app:destination="@id/profile" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/own_club"
+        android:name="com.example.myapplication.own_club"
+        android:label="fragment_own_club"
+        tools:layout="@layout/fragment_own_club" >
+
+        <action
+            android:id="@+id/action_own_club_to_memberlist"
+            app:destination="@id/club_memberlist" />
+
+        <action
+            android:id="@+id/action_own_club_to_leaderboard"
+            app:destination="@id/club_leaderboard" />
+
+        <action
+            android:id="@+id/action_own_club_to_myclub"
+            app:destination="@id/myClub" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/club_leaderboard"
+        android:name="com.example.myapplication.club_leaderboard"
+        android:label="fragment_club_leaderboard"
+        tools:layout="@layout/fragment_club_leaderboard" >
+
+        <action
+            android:id="@+id/action_leaderboard_to_leaderboard1"
+            app:destination="@id/club_leaderboard1" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/club_leaderboard1"
+        android:name="com.example.myapplication.club_leaderboard1"
+        android:label="fragment_club_leaderboard1"
+        tools:layout="@layout/fragment_club_leaderboard1" >
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/club_memberlist"
+        android:name="com.example.myapplication.club_memberlist"
+        android:label="fragment_club_memberlist"
+        tools:layout="@layout/fragment_club_memberlist" >
+
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/host_club"
+        android:name="com.example.myapplication.host_club"
+        android:label="fragment_host_club"
+        tools:layout="@layout/fragment_host_club" >
+
+        <action
+            android:id="@+id/action_host_club_to_memberlist"
+            app:destination="@id/club_memberlist" />
+        <action
+            android:id="@+id/action_host_club_to_create_games"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_host_club_to_create_scoreboard"
+            app:destination="@id/create_scoreboard" />
+        <action
+            android:id="@+id/action_host_club_to_leaderboard"
+            app:destination="@id/club_leaderboard" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/create_scoreboard"
+        android:name="com.example.myapplication.create_scoreboard"
+        android:label="fragment_create_scoreboard"
+        tools:layout="@layout/fragment_create_scoreboard" >
+
+        <action
+            android:id="@+id/action_scoreboard_to_scoreboard1"
+            app:destination="@id/create_scoreboard1" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/create_scoreboard1"
+        android:name="com.example.myapplication.create_scoreboard1"
+        android:label="fragment_create_scoreboard1"
+        tools:layout="@layout/fragment_create_scoreboard1" >
+
+        <action
+            android:id="@+id/action_scoreboard1_to_scoreboard2"
+            app:destination="@id/create_scoreboard2" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/create_scoreboard2"
+        android:name="com.example.myapplication.create_scoreboard2"
+        android:label="fragment_create_scoreboard2"
+        tools:layout="@layout/fragment_create_scoreboard2" >
+
+        <action
+            android:id="@+id/action_scoreboard2_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/join_session"
+        android:name="com.example.myapplication.join_session"
+        android:label="fragment_join_session"
+        tools:layout="@layout/fragment_join_session" >
+
+        <action
+            android:id="@+id/action_session_to_home"
+            app:destination="@id/dashboard_fragment" />
+        <!--        navbar-->
+        <action
+            android:id="@+id/action_dashboard_to_friendlist"
+            app:destination="@id/friendlist" />
+        <action
+            android:id="@+id/action_dashboard_to_myclub"
+            app:destination="@id/myClub" />
+        <action
+            android:id="@+id/action_dashboard_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_create_session"
+            app:destination="@id/create_session" />
+        <action
+            android:id="@+id/action_dashboard_to_myprofile"
+            app:destination="@id/profile" />
+
+    </fragment>
+
+
+</navigation>
