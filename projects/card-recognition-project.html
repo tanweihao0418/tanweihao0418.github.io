@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Recognition System for Baccarat | Tan Wei Hao</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <link rel="stylesheet" href="../css/card-recognition-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none;">
+                    <span class="logo-text">TW</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link" data-en="Back to Portfolio" data-zh="返回作品集">Back to Portfolio</a></li>
+                <li><a href="#overview" class="nav-link" data-en="Overview" data-zh="概述">Overview</a></li>
+                <li><a href="#demo" class="nav-link" data-en="Demo" data-zh="演示">Demo</a></li>
+                <li><a href="#features" class="nav-link" data-en="Features" data-zh="功能">Features</a></li>
+                <li><a href="#technical" class="nav-link" data-en="Technical" data-zh="技术">Technical</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="lang-toggle" aria-label="切换语言 / Switch Language">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text">中文</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-breadcrumb">
+                    <a href="../index.html" data-en="Portfolio" data-zh="作品集">Portfolio</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-en="Projects" data-zh="项目">Projects</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-en="Card Recognition System" data-zh="卡牌识别系统">Card Recognition System</span>
+                </div>
+                <h1 class="project-title">
+                    <i class="fas fa-eye"></i>
+                    <span data-en="Card Recognition System for Baccarat" data-zh="百家乐卡牌识别系统">Card Recognition System for Baccarat</span>
+                </h1>
+                <p class="project-subtitle" data-en="Sophisticated Real-Time Computer Vision System with Multi-YOLO AI Integration" data-zh="集成多YOLO AI的高级实时计算机视觉系统">
+                    Sophisticated Real-Time Computer Vision System with Multi-YOLO AI Integration
+                </p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-code"></i>
+                        <span data-en="C# / .NET 8 / WPF" data-zh="C# / .NET 8 / WPF">C# / .NET 8 / WPF</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-robot"></i>
+                        <span data-en="Computer Vision + AI" data-zh="计算机视觉 + AI">Computer Vision + AI</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span data-en="Real-Time Processing" data-zh="实时处理">Real-Time Processing</span>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        <span data-en="View Demo" data-zh="查看演示">View Demo</span>
+                    </a>
+                    <a href="#technical" class="btn btn-outline">
+                        <i class="fas fa-cogs"></i>
+                        <span data-en="Technical Details" data-zh="技术详情">Technical Details</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="project-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Project Overview" data-zh="项目概述">Project Overview</h2>
+                <p class="section-subtitle" data-en="Advanced computer vision system for real-time Baccarat card recognition" data-zh="用于实时百家乐卡牌识别的高级计算机视觉系统">Advanced computer vision system for real-time Baccarat card recognition</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p data-en="This project is a sophisticated real-time card recognition system designed specifically for Baccarat gameplay, utilizing state-of-the-art computer vision and machine learning technologies to automatically detect, classify, and track playing cards from live video feeds." data-zh="该项目是专为百家乐游戏设计的先进实时卡牌识别系统，利用最先进的计算机视觉和机器学习技术，自动检测、分类和跟踪来自实时视频流的扑克牌。">
+                        This project is a sophisticated real-time card recognition system designed specifically for Baccarat gameplay, 
+                        utilizing state-of-the-art computer vision and machine learning technologies to automatically detect, classify, 
+                        and track playing cards from live video feeds.
+                    </p>
+                    <p data-en="Built with C#/.NET 8 and WPF, the system integrates multiple YOLO architectures (v5, v7, v8) with advanced duplicate filtering algorithms and spatial card assignment logic, achieving 30 FPS real-time performance with 80% reduction in false positives." data-zh="使用C#/.NET 8和WPF构建，该系统集成了多个YOLO架构（v5、v7、v8），配合先进的重复过滤算法和空间卡牌分配逻辑，实现30 FPS实时性能，误报率降低80%。">
+                        Built with C#/.NET 8 and WPF, the system integrates multiple YOLO architectures (v5, v7, v8) with advanced 
+                        duplicate filtering algorithms and spatial card assignment logic, achieving 30 FPS real-time performance 
+                        with 80% reduction in false positives.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">30</div>
+                        <div class="stat-label" data-en="FPS Real-Time" data-zh="实时帧率">FPS Real-Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label" data-en="False Positive Reduction" data-zh="误报减少">False Positive Reduction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label" data-en="YOLO Models Integrated" data-zh="集成的YOLO模型">YOLO Models Integrated</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Live System Demonstration" data-zh="实时系统演示">Live System Demonstration</h2>
+                <p class="section-subtitle" data-en="Real-time card detection and classification in action" data-zh="实时卡牌检测和分类演示">Real-time card detection and classification in action</p>
+            </div>
+            
+            <div class="demo-gallery">
+                <!-- Main Demo GIF -->
+                <div class="demo-main">
+                    <div class="demo-card featured">
+                        <div class="demo-image-container">
+                            <img src="../images/card-recognition/Step1_CardDetecttion_UI.png" alt="Real-time Card Detection UI" class="demo-image" loading="lazy">
+                        </div>
+                        <div class="demo-content">
+                            <h3><i class="fas fa-play-circle"></i> <span data-en="Real-Time Detection Interface" data-zh="实时检测界面">Real-Time Detection Interface</span></h3>
+                            <p data-en="Live demonstration of the WPF application showing real-time card detection with confidence levels and bounding boxes." data-zh="WPF应用程序的实时演示，显示带有置信度级别和边界框的实时卡牌检测。">Live demonstration of the WPF application showing real-time card detection with confidence levels and bounding boxes.</p>
+                            <div class="demo-features">
+                                <span class="feature-tag" data-en="Live Video Feed" data-zh="实时视频流">Live Video Feed</span>
+                                <span class="feature-tag" data-en="Detection Overlay" data-zh="检测叠加层">Detection Overlay</span>
+                                <span class="feature-tag" data-en="Confidence Scoring" data-zh="置信度评分">Confidence Scoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detection Steps -->
+                <div class="demo-steps">
+                    <div class="demo-step" data-step="1">
+                        <div class="step-header">
+                            <div class="step-number">01</div>
+                            <div class="step-title">
+                                <h4 data-en="First Card Detection" data-zh="第一张牌检测">First Card Detection</h4>
+                                <span class="step-status" data-en="✓ Real-time Detection" data-zh="✓ 实时检测">✓ Real-time Detection</span>
+                            </div>
+                        </div>
+                        <div class="step-image-container">
+                            <div class="step-image">
+                                <img src="../images/card-recognition/Step2_CardDetection_FirstCard.png" alt="First Card Detection" class="demo-image" loading="lazy">
+                            </div>
+                            <div class="image-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <span data-en="Bounding Box Detection" data-zh="边界框检测">Bounding Box Detection</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-percentage"></i>
+                                    <span data-en="Confidence Score: 98.5%" data-zh="置信度分数：98.5%">Confidence Score: 98.5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p data-en="System identifies and classifies the first card with high confidence, displaying detection bounding box and card value. The YOLO model processes the frame in real-time, providing accurate card recognition with spatial coordinates." data-zh="系统以高置信度识别和分类第一张牌，显示检测边界框和牌值。YOLO模型实时处理帧，提供准确的卡牌识别和空间坐标。">System identifies and classifies the first card with high confidence, displaying detection bounding box and card value. The YOLO model processes the frame in real-time, providing accurate card recognition with spatial coordinates.</p>
+                            <div class="tech-highlights">
+                                <span class="tech-tag">YOLO Detection</span>
+                                <span class="tech-tag">Confidence Scoring</span>
+                                <span class="tech-tag">Spatial Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-step" data-step="2">
+                        <div class="step-header">
+                            <div class="step-number">02</div>
+                            <div class="step-title">
+                                <h4 data-en="Multiple Card Recognition" data-zh="多张牌识别">Multiple Card Recognition</h4>
+                                <span class="step-status" data-en="✓ Spatial Assignment" data-zh="✓ 空间分配">✓ Spatial Assignment</span>
+                            </div>
+                        </div>
+                        <div class="step-image-container">
+                            <div class="step-image">
+                                <img src="../images/card-recognition/Step3_CardDetection_SecondCard.png" alt="Second Card Detection" class="demo-image" loading="lazy">
+                            </div>
+                            <div class="image-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-sitemap"></i>
+                                    <span data-en="Multi-Card Processing" data-zh="多牌处理">Multi-Card Processing</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-chess-board"></i>
+                                    <span data-en="Player/Banker Assignment" data-zh="玩家/庄家分配">Player/Banker Assignment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p data-en="Advanced spatial assignment algorithm correctly identifies and assigns multiple cards to appropriate hands (Player/Banker). The system uses position-based logic to determine card ownership and maintains game state consistency." data-zh="高级空间分配算法正确识别并将多张牌分配给相应的手牌（玩家/庄家）。系统使用基于位置的逻辑来确定牌的归属并保持游戏状态的一致性。">Advanced spatial assignment algorithm correctly identifies and assigns multiple cards to appropriate hands (Player/Banker). The system uses position-based logic to determine card ownership and maintains game state consistency.</p>
+                            <div class="tech-highlights">
+                                <span class="tech-tag">Spatial Algorithm</span>
+                                <span class="tech-tag">Multi-Detection</span>
+                                <span class="tech-tag">Game Logic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-step" data-step="3">
+                        <div class="step-header">
+                            <div class="step-number">03</div>
+                            <div class="step-title">
+                                <h4 data-en="Confidence Analysis" data-zh="置信度分析">Confidence Analysis</h4>
+                                <span class="step-status" data-en="✓ Duplicate Filtering" data-zh="✓ 重复过滤">✓ Duplicate Filtering</span>
+                            </div>
+                        </div>
+                        <div class="step-image-container">
+                            <div class="step-image">
+                                <img src="../images/card-recognition/CardDetection_ConfidenceLevel.png" alt="Confidence Level Analysis" class="demo-image" loading="lazy">
+                            </div>
+                            <div class="image-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-filter"></i>
+                                    <span data-en="Advanced Filtering" data-zh="高级过滤">Advanced Filtering</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span data-en="IoU Calculations" data-zh="IoU计算">IoU Calculations</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <p data-en="Sophisticated duplicate filtering system with confidence-based selection ensures highest accuracy detections are prioritized. Multi-layer filtering approach reduces false positives by 80% through IoU analysis and threshold optimization." data-zh="复杂的重复过滤系统通过基于置信度的选择确保优先考虑最高精度的检测。多层过滤方法通过IoU分析和阈值优化将误报减少80%。">Sophisticated duplicate filtering system with confidence-based selection ensures highest accuracy detections are prioritized. Multi-layer filtering approach reduces false positives by 80% through IoU analysis and threshold optimization.</p>
+                            <div class="tech-highlights">
+                                <span class="tech-tag">IoU Analysis</span>
+                                <span class="tech-tag">Confidence Filtering</span>
+                                <span class="tech-tag">Accuracy Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Core Features & Capabilities" data-zh="核心功能和能力">Core Features & Capabilities</h2>
+                <p class="section-subtitle" data-en="Enterprise-level computer vision and AI integration" data-zh="企业级计算机视觉和AI集成">Enterprise-level computer vision and AI integration</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 data-en="Real-Time Card Detection" data-zh="实时卡牌检测">Real-Time Card Detection</h3>
+                    <p data-en="Multi-model YOLO support with live video processing, batch image analysis, and CUDA GPU acceleration with automatic CPU fallback." data-zh="多模型YOLO支持，具有实时视频处理、批量图像分析和CUDA GPU加速，自动CPU回退。">Multi-model YOLO support with live video processing, batch image analysis, and CUDA GPU acceleration with automatic CPU fallback.</p>
+                    <ul class="feature-details">
+                        <li data-en="YOLOv5, YOLOv7, YOLOv8 integration" data-zh="YOLOv5、YOLOv7、YOLOv8集成">YOLOv5, YOLOv7, YOLOv8 integration</li>
+                        <li data-en="30 FPS real-time performance" data-zh="30 FPS实时性能">30 FPS real-time performance</li>
+                        <li data-en="GPU acceleration with CUDA" data-zh="CUDA GPU加速">GPU acceleration with CUDA</li>
+                        <li data-en="Webcam and IP camera support" data-zh="网络摄像头和IP摄像头支持">Webcam and IP camera support</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 data-en="Advanced Duplicate Filtering" data-zh="高级重复过滤">Advanced Duplicate Filtering</h3>
+                    <p data-en="Sophisticated multi-layer filtering system using IoU calculations, confidence-based selection, and configurable thresholds." data-zh="使用IoU计算、基于置信度的选择和可配置阈值的复杂多层过滤系统。">Sophisticated multi-layer filtering system using IoU calculations, confidence-based selection, and configurable thresholds.</p>
+                    <ul class="feature-details">
+                        <li data-en="Spatial duplicate detection" data-zh="空间重复检测">Spatial duplicate detection</li>
+                        <li data-en="Intersection over Union (IoU) analysis" data-zh="交并比(IoU)分析">Intersection over Union (IoU) analysis</li>
+                        <li data-en="Confidence-based prioritization" data-zh="基于置信度的优先级排序">Confidence-based prioritization</li>
+                        <li data-en="80% false positive reduction" data-zh="80%误报减少">80% false positive reduction</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <h3 data-en="Intelligent Card Assignment" data-zh="智能卡牌分配">Intelligent Card Assignment</h3>
+                    <p data-en="Position-aware spatial assignment with proper Baccarat scoring logic, visual layout recognition, and cross-hand validation." data-zh="具有适当百家乐评分逻辑、视觉布局识别和交叉手验证的位置感知空间分配。">Position-aware spatial assignment with proper Baccarat scoring logic, visual layout recognition, and cross-hand validation.</p>
+                    <ul class="feature-details">
+                        <li data-en="Spatial card assignment algorithm" data-zh="空间卡牌分配算法">Spatial card assignment algorithm</li>
+                        <li data-en="Baccarat logic implementation" data-zh="百家乐逻辑实现">Baccarat logic implementation</li>
+                        <li data-en="Table layout recognition" data-zh="桌面布局识别">Table layout recognition</li>
+                        <li data-en="Modulo 10 scoring system" data-zh="模10计分系统">Modulo 10 scoring system</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Robust Error Handling" data-zh="强大的错误处理">Robust Error Handling</h3>
+                    <p data-en="Comprehensive error recovery with multiple backend fallbacks, automatic camera reconnection, and proper resource management." data-zh="全面的错误恢复，具有多个后端回退、自动摄像头重连和适当的资源管理。">Comprehensive error recovery with multiple backend fallbacks, automatic camera reconnection, and proper resource management.</p>
+                    <ul class="feature-details">
+                        <li data-en="Multi-backend initialization" data-zh="多后端初始化">Multi-backend initialization</li>
+                        <li data-en="Automatic camera recovery" data-zh="自动摄像头恢复">Automatic camera recovery</li>
+                        <li data-en="Memory leak prevention" data-zh="内存泄漏预防">Memory leak prevention</li>
+                        <li data-en="Exception handling system" data-zh="异常处理系统">Exception handling system</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 data-en="Modern WPF Interface" data-zh="现代WPF界面">Modern WPF Interface</h3>
+                    <p data-en="Responsive desktop application with real-time visualization, configuration controls, and comprehensive debugging tools." data-zh="具有实时可视化、配置控制和全面调试工具的响应式桌面应用程序。">Responsive desktop application with real-time visualization, configuration controls, and comprehensive debugging tools.</p>
+                    <ul class="feature-details">
+                        <li data-en="Intuitive WPF interface" data-zh="直观的WPF界面">Intuitive WPF interface</li>
+                        <li data-en="Live detection overlays" data-zh="实时检测叠加层">Live detection overlays</li>
+                        <li data-en="Adjustable parameters" data-zh="可调参数">Adjustable parameters</li>
+                        <li data-en="Debug information panel" data-zh="调试信息面板">Debug information panel</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 data-en="Performance Optimization" data-zh="性能优化">Performance Optimization</h3>
+                    <p data-en="Asynchronous processing with background workers, efficient memory management, and hardware acceleration support." data-zh="具有后台工作者的异步处理、高效内存管理和硬件加速支持。">Asynchronous processing with background workers, efficient memory management, and hardware acceleration support.</p>
+                    <ul class="feature-details">
+                        <li data-en="Background image processing" data-zh="后台图像处理">Background image processing</li>
+                        <li data-en="Task-based operations" data-zh="基于任务的操作">Task-based operations</li>
+                        <li data-en="Thread-safe synchronization" data-zh="线程安全同步">Thread-safe synchronization</li>
+                        <li data-en="Resource disposal patterns" data-zh="资源处置模式">Resource disposal patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Technical Implementation" data-zh="技术实现">Technical Implementation</h2>
+                <p class="section-subtitle" data-en="Architecture, frameworks, and cutting-edge technologies" data-zh="架构、框架和前沿技术">Architecture, frameworks, and cutting-edge technologies</p>
+            </div>
+            
+            <div class="tech-content">
+                <div class="tech-stack-section">
+                    <h3><i class="fas fa-layer-group"></i> <span data-en="Technology Stack" data-zh="技术栈">Technology Stack</span></h3>
+                    <div class="tech-stack-grid">
+                        <div class="tech-category">
+                            <h4 data-en="Core Framework" data-zh="核心框架">Core Framework</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">.NET 8</span>
+                                <span class="tech-item">C# 12.0</span>
+                                <span class="tech-item">WPF</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4 data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">OpenCV (Emgu.CV 4.12)</span>
+                                <span class="tech-item">YOLO Models</span>
+                                <span class="tech-item">ONNX Runtime</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4 data-en="AI/ML Frameworks" data-zh="AI/ML框架">AI/ML Frameworks</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">YOLOv5/v7/v8</span>
+                                <span class="tech-item">Darknet Framework</span>
+                                <span class="tech-item">Microsoft ML.NET</span>
+                                <span class="tech-item">NumSharp</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4 data-en="Performance" data-zh="性能">Performance</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">CUDA Support</span>
+                                <span class="tech-item">GPU Acceleration</span>
+                                <span class="tech-item">VideoLAN LibVLC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="architecture-section">
+                    <h3><i class="fas fa-sitemap"></i> <span data-en="System Architecture" data-zh="系统架构">System Architecture</span></h3>
+                    <div class="architecture-grid">
+                        <div class="arch-component">
+                            <h4><i class="fas fa-video"></i> <span data-en="Video Processing Layer" data-zh="视频处理层">Video Processing Layer</span></h4>
+                            <p data-en="Real-time video capture from webcam/IP cameras with frame preprocessing and optimization for AI inference." data-zh="从网络摄像头/IP摄像头实时视频捕获，具有帧预处理和AI推理优化。">Real-time video capture from webcam/IP cameras with frame preprocessing and optimization for AI inference.</p>
+                        </div>
+                        <div class="arch-component">
+                            <h4><i class="fas fa-brain"></i> <span data-en="AI Detection Engine" data-zh="AI检测引擎">AI Detection Engine</span></h4>
+                            <p data-en="Multi-YOLO model integration with dynamic backend selection (CUDA → OpenCV → CPU fallback)." data-zh="多YOLO模型集成，具有动态后端选择（CUDA → OpenCV → CPU回退）。">Multi-YOLO model integration with dynamic backend selection (CUDA → OpenCV → CPU fallback).</p>
+                        </div>
+                        <div class="arch-component">
+                            <h4><i class="fas fa-filter"></i> <span data-en="Filtering & Assignment" data-zh="过滤和分配">Filtering & Assignment</span></h4>
+                            <p data-en="Advanced duplicate filtering and spatial card assignment algorithms with IoU calculations." data-zh="具有IoU计算的高级重复过滤和空间卡牌分配算法。">Advanced duplicate filtering and spatial card assignment algorithms with IoU calculations.</p>
+                        </div>
+                        <div class="arch-component">
+                            <h4><i class="fas fa-desktop"></i> <span data-en="WPF User Interface" data-zh="WPF用户界面">WPF User Interface</span></h4>
+                            <p data-en="Modern desktop interface with real-time visualization, controls, and debugging capabilities." data-zh="具有实时可视化、控制和调试功能的现代桌面界面。">Modern desktop interface with real-time visualization, controls, and debugging capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-section">
+                    <h3><i class="fas fa-tachometer-alt"></i> <span data-en="Performance Metrics" data-zh="性能指标">Performance Metrics</span></h3>
+                    <div class="performance-grid">
+                        <div class="perf-card">
+                            <div class="perf-number">30</div>
+                            <div class="perf-label" data-en="FPS Processing" data-zh="FPS处理">FPS Processing</div>
+                            <div class="perf-desc" data-en="Real-time video analysis" data-zh="实时视频分析">Real-time video analysis</div>
+                        </div>
+                        <div class="perf-card">
+                            <div class="perf-number">80%</div>
+                            <div class="perf-label" data-en="Accuracy Improvement" data-zh="精度提升">Accuracy Improvement</div>
+                            <div class="perf-desc" data-en="False positive reduction" data-zh="误报减少">False positive reduction</div>
+                        </div>
+                        <div class="perf-card">
+                            <div class="perf-number">3000+</div>
+                            <div class="perf-label" data-en="Lines of Code" data-zh="代码行数">Lines of Code</div>
+                            <div class="perf-desc" data-en="Comprehensive implementation" data-zh="全面实现">Comprehensive implementation</div>
+                        </div>
+                        <div class="perf-card">
+                            <div class="perf-number">15+</div>
+                            <div class="perf-label" data-en="Source Files" data-zh="源文件">Source Files</div>
+                            <div class="perf-desc" data-en="Modular architecture" data-zh="模块化架构">Modular architecture</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Impact -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Project Impact & Results" data-zh="项目影响和成果">Project Impact & Results</h2>
+                <p class="section-subtitle" data-en="Achievements and technical breakthroughs" data-zh="成就和技术突破">Achievements and technical breakthroughs</p>
+            </div>
+            
+            <div class="impact-content">
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 data-en="Technical Achievements" data-zh="技术成就">Technical Achievements</h3>
+                        <ul>
+                            <li data-en="Real-Time Performance: 30 FPS processing with live detection" data-zh="实时性能：30 FPS处理，具有实时检测"><strong>Real-Time Performance:</strong> 30 FPS processing with live detection</li>
+                            <li data-en="High Accuracy: 80% reduction in false positives" data-zh="高精度：误报减少80%"><strong>High Accuracy:</strong> 80% reduction in false positives</li>
+                            <li data-en="Reliability: Robust system with automatic error recovery" data-zh="可靠性：具有自动错误恢复的强大系统"><strong>Reliability:</strong> Robust system with automatic error recovery</li>
+                            <li data-en="Scalability: Modular design for additional card games" data-zh="可扩展性：用于其他卡牌游戏的模块化设计"><strong>Scalability:</strong> Modular design for additional card games</li>
+                        </ul>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 data-en="Innovation in Computer Vision" data-zh="计算机视觉创新">Innovation in Computer Vision</h3>
+                        <ul>
+                            <li data-en="Custom Algorithms: Novel duplicate detection approaches" data-zh="自定义算法：新颖的重复检测方法"><strong>Custom Algorithms:</strong> Novel duplicate detection approaches</li>
+                            <li data-en="Spatial Analysis: Advanced position-aware assignment" data-zh="空间分析：高级位置感知分配"><strong>Spatial Analysis:</strong> Advanced position-aware assignment</li>
+                            <li data-en="Multi-Model Integration: Unified interface for AI architectures" data-zh="多模型集成：AI架构的统一接口"><strong>Multi-Model Integration:</strong> Unified interface for AI architectures</li>
+                            <li data-en="Performance Optimization: GPU acceleration with fallbacks" data-zh="性能优化：具有回退的GPU加速"><strong>Performance Optimization:</strong> GPU acceleration with fallbacks</li>
+                        </ul>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3 data-en="User Experience Excellence" data-zh="用户体验卓越">User Experience Excellence</h3>
+                        <ul>
+                            <li data-en="Intuitive Interface: Clean, responsive WPF application" data-zh="直观界面：干净、响应式的WPF应用程序"><strong>Intuitive Interface:</strong> Clean, responsive WPF application</li>
+                            <li data-en="Real-Time Feedback: Immediate visual confirmation" data-zh="实时反馈：即时视觉确认"><strong>Real-Time Feedback:</strong> Immediate visual confirmation</li>
+                            <li data-en="Configurable Parameters: User-adjustable settings" data-zh="可配置参数：用户可调设置"><strong>Configurable Parameters:</strong> User-adjustable settings</li>
+                            <li data-en="Comprehensive Logging: Debug and diagnostic tools" data-zh="全面日志记录：调试和诊断工具"><strong>Comprehensive Logging:</strong> Debug and diagnostic tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Demonstrated -->
+    <section class="skills-demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Skills Demonstrated" data-zh="展示的技能">Skills Demonstrated</h2>
+                <p class="section-subtitle" data-en="Technical competencies and problem-solving abilities" data-zh="技术能力和解决问题的能力">Technical competencies and problem-solving abilities</p>
+            </div>
+            
+            <div class="skills-demo-grid">
+                <div class="skill-demo-card">
+                    <h3><i class="fas fa-code"></i> <span data-en="Technical Skills" data-zh="技术技能">Technical Skills</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                            <span class="skill-desc" data-en="Advanced image processing and object detection" data-zh="高级图像处理和目标检测">Advanced image processing and object detection</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Machine Learning" data-zh="机器学习">Machine Learning</span>
+                            <span class="skill-desc" data-en="Deep learning model integration and optimization" data-zh="深度学习模型集成和优化">Deep learning model integration and optimization</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="C# Development" data-zh="C#开发">C# Development</span>
+                            <span class="skill-desc" data-en="Advanced .NET programming with modern features" data-zh="具有现代功能的高级.NET编程">Advanced .NET programming with modern features</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="WPF Development" data-zh="WPF开发">WPF Development</span>
+                            <span class="skill-desc" data-en="Rich desktop application development" data-zh="丰富的桌面应用程序开发">Rich desktop application development</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Performance Optimization" data-zh="性能优化">Performance Optimization</span>
+                            <span class="skill-desc" data-en="Memory management and GPU acceleration" data-zh="内存管理和GPU加速">Memory management and GPU acceleration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-demo-card">
+                    <h3><i class="fas fa-puzzle-piece"></i> <span data-en="Problem-Solving Skills" data-zh="解决问题的技能">Problem-Solving Skills</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Algorithm Design" data-zh="算法设计">Algorithm Design</span>
+                            <span class="skill-desc" data-en="Custom duplicate detection and spatial assignment" data-zh="自定义重复检测和空间分配">Custom duplicate detection and spatial assignment</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="System Integration" data-zh="系统集成">System Integration</span>
+                            <span class="skill-desc" data-en="Combining multiple AI frameworks and libraries" data-zh="结合多个AI框架和库">Combining multiple AI frameworks and libraries</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Error Recovery" data-zh="错误恢复">Error Recovery</span>
+                            <span class="skill-desc" data-en="Robust error handling and automatic recovery" data-zh="强大的错误处理和自动恢复">Robust error handling and automatic recovery</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Performance Tuning" data-zh="性能调优">Performance Tuning</span>
+                            <span class="skill-desc" data-en="Real-time processing optimization" data-zh="实时处理优化">Real-time processing optimization</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-en="Asynchronous Programming" data-zh="异步编程">Asynchronous Programming</span>
+                            <span class="skill-desc" data-en="Task-based and background processing" data-zh="基于任务和后台处理">Task-based and background processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Enhancements -->
+    <section class="future-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="🚀 Future Enhancements" data-zh="🚀 未来增强功能">🚀 Future Enhancements</h2>
+                <p class="section-subtitle" data-en="Planned improvements and extensibility" data-zh="计划的改进和可扩展性">Planned improvements and extensibility</p>
+            </div>
+            
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 data-en="Additional Game Support" data-zh="其他游戏支持">Additional Game Support</h3>
+                    <ul>
+                        <li data-en="Texas Hold'em poker recognition" data-zh="德州扑克识别">Texas Hold'em poker recognition</li>
+                        <li data-en="Blackjack card counting integration" data-zh="二十一点算牌集成">Blackjack card counting integration</li>
+                        <li data-en="Multi-table simultaneous monitoring" data-zh="多桌同时监控">Multi-table simultaneous monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="future-card">
+                    <div class="future-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-en="Advanced AI Features" data-zh="高级AI功能">Advanced AI Features</h3>
+                    <ul>
+                        <li data-en="Custom model training pipelines" data-zh="自定义模型训练管道">Custom model training pipelines</li>
+                        <li data-en="Real-time adaptive learning" data-zh="实时自适应学习">Real-time adaptive learning</li>
+                        <li data-en="Multi-camera fusion processing" data-zh="多摄像头融合处理">Multi-camera fusion processing</li>
+                    </ul>
+                </div>
+
+                <div class="future-card">
+                    <div class="future-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 data-en="Cloud Integration" data-zh="云集成">Cloud Integration</h3>
+                    <ul>
+                        <li data-en="Cloud-based AI processing" data-zh="基于云的AI处理">Cloud-based AI processing</li>
+                        <li data-en="Real-time analytics dashboard" data-zh="实时分析仪表板">Real-time analytics dashboard</li>
+                        <li data-en="Remote monitoring and configuration" data-zh="远程监控和配置">Remote monitoring and configuration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tan Wei Hao. All rights reserved.</p>
+                    <p>Card Recognition System for Baccarat - Advanced Computer Vision Project</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html" class="footer-link" data-en="Back to Portfolio" data-zh="返回作品集">Back to Portfolio</a>
+                    <a href="mailto:weihaotan.77@gmail.com" class="footer-link" data-en="Contact" data-zh="联系">Contact</a>
+                    <a href="https://linkedin.com/in/tan-wei-hao-147b69149" target="_blank" class="footer-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Add scroll animation for demo steps
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.demo-step').forEach(step => {
+                observer.observe(step);
+            });
+        });
+    </script>
+</body>
+</html>
