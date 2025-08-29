@@ -1,283 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>My Website</title>
-    <link rel="icon" type="image/x-icon" href="week4/assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="web_development/main/css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tan Wei Hao - AI Engineer & Full-Stack Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Tan Wei Hao</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="web_development/main/image/prof_img.jpg" alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">
-                        About Me
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <div class="accordion accordion-flush" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button id="acd_btn" class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <a class="nav-link js-scroll-trigger acd_title" href="#work_exp">
-                                        Working Experience
-                                    </a>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show acd_nav"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <a class="nav-link js-scroll-trigger acd_items" href="#work1">
-                                        Footfallcam (Meta Research)
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">TW</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-zh="主页">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="#experience" class="nav-link" data-en="Experience" data-zh="经历">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-zh="技能">Skills</a></li>
+                <li><a href="#certifications" class="nav-link" data-en="Certifications" data-zh="认证">Certifications</a></li>
+                <li><a href="#resume" class="nav-link" data-en="Resume" data-zh="简历">Resume</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="lang-toggle" aria-label="切换语言 / Switch Language">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text">中文</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </div>
     </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div id="bg_about" class="resume-section-content">
-                <div class="jumbotron">
-                    <h1 class="display-2">
-                        Tan Wei
-                        <span class="text-primary">Hao</span>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Tan Wei Hao</span>
                     </h1>
-                    <p class="lead">Hello there. My name is Tan Wei Hao.I'm from Kajang and currently study Bachelor in
-                        Software Engineer in New Era
-                        University.</p>
-                    <hr class="my-4">
-                    <div class="accordion accordion-flush acd_1" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-heading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapse" aria-expanded="false"
-                                    aria-controls="flush-collapse">
-                                    <div class="acd_btn_text">Email Address <span class="m-4"><i
-                                                class="fa fa-envelope-open" aria-hidden="true"></i></span></div>
-                                </button>
-                            </h2>
-                            <div id="flush-collapse" class="accordion-collapse collapse" aria-labelledby="flush-heading"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <h4>tanweihao0418@e.newera.edu.my</h4>
-                                </div>
-                            </div>
+                    <h2 class="hero-subtitle" data-en="AI Engineer & Full-Stack Developer" data-zh="人工智能工程师 & 全栈开发者">AI Engineer & Full-Stack Developer</h2>
+                    <p class="hero-description" data-en="Innovative AI Engineer specializing in LLMs, RAG systems, and full-stack development. Passionate about leveraging cutting-edge AI to build intelligent solutions that transform businesses." data-zh="创新的人工智能工程师，专注于大型语言模型(LLM)、检索增强生成(RAG)系统和全栈开发。致力于利用前沿AI技术构建智能解决方案，推动企业数字化转型。">
+                        Innovative AI Engineer specializing in LLMs, RAG systems, and full-stack development. 
+                        Passionate about leveraging cutting-edge AI to build intelligent solutions that transform businesses.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" data-en="Get In Touch" data-zh="联系我">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline" data-en="View Projects" data-zh="查看项目">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com/in/tan-wei-hao-147b69149" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:weihaotan.77@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <span>TW</span>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    <div class="acd_btn_text">Education <span class="m-4"><i class="fa fa-university"
-                                                aria-hidden="true"></i></span></div>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <h4>New Era University College - Bachelor In Software Engineer</h4>
-                                </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class="fas fa-robot"></i>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    <div class="acd_btn_text">Hobbies<span class="m-4"><i class="fa fa-bicycle"
-                                                aria-hidden="true"></i></span></div>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <h4>Listen to music<i class="fa fa-music" aria-hidden="true"></i></h4>
-                                    <h4>Play games<i class="fa fa-gamepad" aria-hidden="true"></i></h4>
-                                </div>
+                            <div class="floating-icon" style="--delay: 0.5s">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1.5s">
+                                <i class="fas fa-database"></i>
                             </div>
                         </div>
                     </div>
-                    <hr class="my-4">
-                    <a class="btn btn-primary btn-lg" href="https://github.com/tanweihao0418/tanweihao0418.github.io"
-                        role="button">
-                        Visit My GitHub
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+                <p class="section-subtitle" data-en="Passionate about AI innovation and full-stack development" data-zh="专注于AI创新和全栈开发">Passionate about AI innovation and full-stack development</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I'm an innovative AI Engineer with hands-on experience in the complete lifecycle of AI solutions, from development to deployment. My expertise spans fine-tuning Large Language Models (LLMs), developing advanced chatbots with Retrieval-Augmented Generation (RAG), and building high-accuracy computer vision systems." data-zh="我是一名创新的人工智能工程师，在AI解决方案的完整生命周期中拥有丰富的实践经验，从开发到部署。我的专业技能涵盖大型语言模型(LLM)微调、开发具有检索增强生成(RAG)功能的高级聊天机器人，以及构建高精度计算机视觉系统。">
+                        I'm an innovative AI Engineer with hands-on experience in the complete lifecycle of AI solutions, 
+                        from development to deployment. My expertise spans fine-tuning Large Language Models (LLMs), 
+                        developing advanced chatbots with Retrieval-Augmented Generation (RAG), and building 
+                        high-accuracy computer vision systems.
+                    </p>
+                    <p data-en="As a skilled full-stack developer, I leverage cutting-edge tools like GitHub Copilot to accelerate development and deliver robust, AI-driven applications. I'm passionate about transforming complex business challenges into intelligent, scalable solutions." data-zh="作为一名熟练的全栈开发者，我利用GitHub Copilot等前沿工具来加速开发，交付稳健的AI驱动应用程序。我热衷于将复杂的业务挑战转化为智能、可扩展的解决方案。">
+                        As a skilled full-stack developer, I leverage cutting-edge tools like GitHub Copilot to 
+                        accelerate development and deliver robust, AI-driven applications. I'm passionate about 
+                        transforming complex business challenges into intelligent, scalable solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-en="Years Experience" data-zh="年工作经验">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-en="AI Projects" data-zh="AI项目">AI Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label" data-en="Technologies" data-zh="技术栈">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>.NET</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Experience" data-zh="工作经历">Experience</h2>
+                <p class="section-subtitle" data-en="My professional journey in AI and software development" data-zh="我在人工智能和软件开发领域的职业历程">My professional journey in AI and software development</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="AI Solution Engineer (Fullstack)" data-zh="AI解决方案工程师(全栈)">AI Solution Engineer (Fullstack)</h3>
+                            <span class="company">TimeTec Cloud</span>
+                            <span class="date">Mar 2024 - Oct 2025</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li data-en="Fine-tuned Deepseek large language models using Python with Unsloth and QLoRA" data-zh="使用Python结合Unsloth和QLoRA技术微调Deepseek大型语言模型">Fine-tuned Deepseek large language models using Python with Unsloth and QLoRA</li>
+                            <li data-en="Developed AI-powered chatbot using OpenAI Agent SDK with RAG and Qdrant vector storage" data-zh="使用OpenAI Agent SDK开发AI聊天机器人，集成RAG技术和Qdrant向量存储">Developed AI-powered chatbot using OpenAI Agent SDK with RAG and Qdrant vector storage</li>
+                            <li data-en="Enhanced HR solutions by implementing OCR technology for automated data extraction" data-zh="通过实施OCR技术实现自动化数据提取，增强HR解决方案">Enhanced HR solutions by implementing OCR technology for automated data extraction</li>
+                            <li data-en="Utilized GitHub Copilot and MCP tools including Playwright for accelerated development" data-zh="利用GitHub Copilot和MCP工具(包括Playwright)加速开发">Utilized GitHub Copilot and MCP tools including Playwright for accelerated development</li>
+                            <li data-en="Developed new features for large-scale HR application using Vue.js framework" data-zh="使用Vue.js框架为大型HR应用程序开发新功能">Developed new features for large-scale HR application using Vue.js framework</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="Software Engineering Intern" data-zh="软件工程实习生">Software Engineering Intern</h3>
+                            <span class="company" data-en="Resort World Tech Lab - Genting Berhad" data-zh="云顶科技实验室 - 云顶集团">Resort World Tech Lab - Genting Berhad</span>
+                            <span class="date">Oct 2023 - Feb 2024</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li data-en="Developed high-accuracy poker card detection model using YOLOv5 and PyTorch" data-zh="使用YOLOv5和PyTorch开发高精度扑克牌检测模型">Developed high-accuracy poker card detection model using YOLOv5 and PyTorch</li>
+                            <li data-en="Conducted comprehensive benchmarking and performance testing of AI models" data-zh="对AI模型进行全面的基准测试和性能测试">Conducted comprehensive benchmarking and performance testing of AI models</li>
+                            <li data-en="Created WPF-based Baccarat game in .NET Core with integrated AI model" data-zh="使用.NET Core创建基于WPF的百家乐游戏，集成AI模型">Created WPF-based Baccarat game in .NET Core with integrated AI model</li>
+                            <li data-en="Built reusable .NET Class Library and published as NuGet package" data-zh="构建可重用的.NET类库并发布为NuGet包">Built reusable .NET Class Library and published as NuGet package</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="AI Intern" data-zh="人工智能实习生">AI Intern</h3>
+                            <span class="company" data-en="Footfallcam - Meta Research" data-zh="Footfallcam - Meta研究">Footfallcam - Meta Research</span>
+                            <span class="date">Feb 2023 - May 2023</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li data-en="Trained CNN models (ResNet50, MobileNet) with Keras & TensorFlow" data-zh="使用Keras和TensorFlow训练CNN模型（ResNet50, MobileNet）">Trained CNN models (ResNet50, MobileNet) with Keras & TensorFlow</li>
+                            <li data-en="Applied PCA for dimensionality reduction and regression analysis" data-zh="应用PCA进行降维和回归分析">Applied PCA for dimensionality reduction and regression analysis</li>
+                            <li data-en="Created image data collection pipeline using FastAPI" data-zh="使用FastAPI创建图像数据收集管道">Created image data collection pipeline using FastAPI</li>
+                            <li data-en="Built automation scripts using Selenium and integrated multiple APIs" data-zh="使用Selenium构建自动化脚本并集成多个API">Built automation scripts using Selenium and integrated multiple APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Skills & Technologies" data-zh="技能与技术">Skills & Technologies</h2>
+                <p class="section-subtitle" data-en="My technical expertise and competencies" data-zh="我的技术专长和能力">My technical expertise and competencies</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3 data-en="AI & Machine Learning" data-zh="人工智能与机器学习">AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Deep Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NLP & LLMs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>RAG Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Computer Vision</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PyTorch & TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-en="Programming Languages" data-zh="编程语言">Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C# / .NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL / NoSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3 data-en="Frameworks & Tools" data-zh="框架与工具">Frameworks & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>FastAPI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>ASP.NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Angular</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Playwright</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Featured Projects" data-zh="精选项目">Featured Projects</h2>
+                <p class="section-subtitle" data-en="Showcase of my latest work in AI and development" data-zh="展示我在AI和开发领域的最新作品">Showcase of my latest work in AI and development</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured-project">
+                    <div class="project-badge">
+                        <span data-en="Featured" data-zh="精选">Featured</span>
+                    </div>
+                    <div class="project-image" style="background-image: url('images/chatbot/step7-gpt41-successful-knowledge-base-response.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/chatbot-project.html" class="project-link" title="View Project Details">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder" style="opacity: 0;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <span data-en="AI Platform" data-zh="AI平台">AI Platform</span>
+                        </div>
+                        <h3 class="project-title" data-en="AI-Powered ChatBot Platform" data-zh="AI智能聊天机器人平台">AI-Powered ChatBot Platform</h3>
+                        <p class="project-description" data-en="Comprehensive full-stack chatbot platform with Vue.js 3, Python FastAPI, OpenAI GPT-4.1, and Qdrant vector database. Features enhanced 128K context window, RAG pipeline with semantic search, and production-ready widget integration with complete end-to-end demonstration." data-zh="使用Vue.js 3、Python FastAPI、OpenAI GPT-4.1和Qdrant向量数据库的全栈聊天机器人平台。具有增强的128K上下文窗口、带语义搜索的RAG管道，以及可投产的组件集成和完整的端到端演示。">
+                            Comprehensive full-stack chatbot platform with Vue.js 3, Python FastAPI, OpenAI GPT-4.1, 
+                            and Qdrant vector database. Features enhanced 128K context window, RAG pipeline with semantic search, 
+                            and production-ready widget integration with complete end-to-end demonstration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js 3</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">GPT-4.1</span>
+                            <span class="tech-tag">Qdrant</span>
+                            <span class="tech-tag">Playwright</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">128K</span>
+                                <span class="stat-label" data-en="Context Window" data-zh="上下文窗口">Context Window</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label" data-en="Accuracy" data-zh="准确率">Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="projects/chatbot-project.html" class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-en="View Details" data-zh="查看详情">View Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('images/card-recognition/Step3_CardDetection_SecondCard.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="projects/card-recognition-project.html" class="project-link" title="View Project Details">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder" style="opacity: 0;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <span data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                        </div>
+                        <h3 class="project-title" data-en="Card Recognition System for Baccarat" data-zh="百家乐牌卡识别系统">Card Recognition System for Baccarat</h3>
+                        <p class="project-description" data-en="Sophisticated real-time card recognition system using C#/.NET 8, WPF, and multiple YOLO models (v5/v7/v8). Features advanced duplicate filtering, spatial assignment algorithms, and CUDA GPU acceleration achieving 30 FPS with 80% false positive reduction." data-zh="使用C#/.NET 8、WPF和多个YOLO模型（v5/v7/v8）的复杂实时牌卡识别系统。具有高级重复过滤、空间分配算法和CUDA GPU加速，实现30 FPS帧率，减少80%误检率。">
+                            Sophisticated real-time card recognition system using C#/.NET 8, WPF, and multiple YOLO models (v5/v7/v8). 
+                            Features advanced duplicate filtering, spatial assignment algorithms, and CUDA GPU acceleration 
+                            achieving 30 FPS with 80% false positive reduction.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#/.NET 8</span>
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">CUDA</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">30</span>
+                                <span class="stat-label" data-en="FPS" data-zh="帧率">FPS</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">80%</span>
+                                <span class="stat-label" data-en="Improvement" data-zh="改进">Improvement</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="projects/card-recognition-project.html" class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-en="View Details" data-zh="查看详情">View Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project Details">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <span data-en="Machine Learning" data-zh="机器学习">Machine Learning</span>
+                        </div>
+                        <h3 class="project-title" data-en="Store Status Detection AI" data-zh="商店状态检测AI">Store Status Detection AI</h3>
+                        <p class="project-description" data-en="CNN models (ResNet50, MobileNet) with Keras & TensorFlow to detect store open/close status from surveillance images with sales prediction capabilities." data-zh="使用Keras和TensorFlow的CNN模型（ResNet50, MobileNet）从监控图像检测商店开关状态，具有销售预测功能。">
+                            CNN models (ResNet50, MobileNet) with Keras & TensorFlow to detect store 
+                            open/close status from surveillance images with sales prediction capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">ResNet50</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Selenium</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">92%</span>
+                                <span class="stat-label" data-en="Accuracy" data-zh="准确率">Accuracy</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label" data-en="Monitoring" data-zh="监控">Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-en="View Details" data-zh="查看详情">View Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Certifications" data-zh="认证">Certifications</h2>
+                <p class="section-subtitle" data-en="Professional certifications and achievements" data-zh="专业认证和成就">Professional certifications and achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name" data-en="Microsoft Azure Fundamentals" data-zh="微软Azure基础认证">Microsoft Azure Fundamentals</h3>
+                            <p class="cert-code">AZ-900</p>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-description">
+                            <p data-en="Demonstrates foundational knowledge of cloud services and how those services are provided with Microsoft Azure. Covers core Azure concepts, services, solutions, management tools, and general security and network security features." data-zh="展示对云服务以及如何通过Microsoft Azure提供这些服务的基础知识。涵盖核心Azure概念、服务、解决方案、管理工具以及一般安全和网络安全功能。">Demonstrates foundational knowledge of cloud services and how those services are provided with Microsoft Azure. Covers core Azure concepts, services, solutions, management tools, and general security and network security features.</p>
+                        </div>
+                        <div class="cert-skills">
+                            <span class="cert-skill" data-en="Cloud Computing" data-zh="云计算">Cloud Computing</span>
+                            <span class="cert-skill" data-en="Azure Services" data-zh="Azure服务">Azure Services</span>
+                            <span class="cert-skill" data-en="Cloud Security" data-zh="云安全">Cloud Security</span>
+                            <span class="cert-skill" data-en="Azure Management" data-zh="Azure管理">Azure Management</span>
+                        </div>
+                        <div class="cert-footer">
+                            <div class="cert-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="cert-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>2024</span>
+                            </div>
+                            <a href="https://learn.microsoft.com/en-us/users/tanweihao-5450/credentials/3fd5173eaa079830" 
+                               target="_blank" 
+                               class="cert-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="View Credential" data-zh="查看证书">View Credential</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for future certifications -->
+                <div class="certification-card future-cert">
+                    <div class="cert-header">
+                        <div class="cert-icon future-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name" data-en="More Certifications Coming Soon" data-zh="更多认证即将到来">More Certifications Coming Soon</h3>
+                            <p class="cert-code" data-en="In Progress" data-zh="进行中">In Progress</p>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-description">
+                            <p data-en="Currently pursuing additional certifications in AI, Machine Learning, and Cloud Technologies to further enhance my technical expertise and stay current with industry standards." data-zh="目前正在追求AI、机器学习和云技术的额外认证，以进一步提升我的技术专业知识并与行业标准保持同步。">Currently pursuing additional certifications in AI, Machine Learning, and Cloud Technologies to further enhance my technical expertise and stay current with industry standards.</p>
+                        </div>
+                        <div class="cert-skills">
+                            <span class="cert-skill">AI/ML</span>
+                            <span class="cert-skill">AWS</span>
+                            <span class="cert-skill">Google Cloud</span>
+                            <span class="cert-skill">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Resume" data-zh="简历">Resume</h2>
+                <p class="section-subtitle" data-en="Download my complete professional resume" data-zh="下载我完整的专业简历">Download my complete professional resume</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-preview">
+                    <div class="resume-card">
+                        <div class="resume-header">
+                            <div class="resume-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="resume-info">
+                                <h3 data-en="Professional Resume" data-zh="专业简历">Professional Resume</h3>
+                                <p data-en="Complete overview of my experience, skills, and achievements" data-zh="我的经验、技能和成就的完整概述">Complete overview of my experience, skills, and achievements</p>
+                                <div class="resume-meta">
+                                    <span class="resume-format" data-en="PDF Format" data-zh="PDF格式">PDF Format</span>
+                                    <span class="resume-pages" data-en="2 Pages" data-zh="2页">2 Pages</span>
+                                    <span class="resume-updated" data-en="Updated Aug 2025" data-zh="2025年8月更新">Updated Aug 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-actions">
+                            <a href="Resume(Tan Wei Hao).pdf" 
+                               target="_blank" 
+                               class="btn btn-primary resume-btn">
+                                <i class="fas fa-eye"></i>
+                                <span data-en="View Resume" data-zh="查看简历">View Resume</span>
+                            </a>
+                            <a href="Resume(Tan Wei Hao).pdf" 
+                               download="Tan_Wei_Hao_Resume.pdf" 
+                               class="btn btn-outline resume-btn">
+                                <i class="fas fa-download"></i>
+                                <span data-en="Download PDF" data-zh="下载PDF">Download PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-highlights">
+                    <h4 data-en="Resume Highlights" data-zh="简历亮点">Resume Highlights</h4>
+                    <div class="highlights-grid">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="3+ Years Experience" data-zh="3年+工作经验">3+ Years Experience</h5>
+                                <p data-en="AI Engineering and Full-Stack Development across multiple industries" data-zh="跨多个行业的人工智能工程和全栈开发">AI Engineering and Full-Stack Development across multiple industries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="AI Specialization" data-zh="AI专业化">AI Specialization</h5>
+                                <p data-en="LLMs, RAG systems, Computer Vision, and Deep Learning expertise" data-zh="LLM、RAG系统、计算机视觉和深度学习专业知识">LLMs, RAG systems, Computer Vision, and Deep Learning expertise</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="Full-Stack Development" data-zh="全栈开发">Full-Stack Development</h5>
+                                <p data-en="Python, C#/.NET, JavaScript, Vue.js, and modern frameworks" data-zh="Python、C#/.NET、JavaScript、Vue.js和现代框架">Python, C#/.NET, JavaScript, Vue.js, and modern frameworks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="Strong Education" data-zh="优秀学历">Strong Education</h5>
+                                <p data-en="Bachelor's in Software Engineering with CGPA 3.84" data-zh="软件工程学士学位，CGPA 3.84">Bachelor's in Software Engineering with CGPA 3.84</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="Certified Professional" data-zh="认证专业人士">Certified Professional</h5>
+                                <p data-en="Microsoft Azure Fundamentals (AZ-900) certified" data-zh="微软Azure基础认证(AZ-900)">Microsoft Azure Fundamentals (AZ-900) certified</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h5 data-en="Notable Projects" data-zh="知名项目">Notable Projects</h5>
+                                <p data-en="AI Chatbot Platform, Poker Detection System, Store Status AI" data-zh="AI聊天机器人平台、扑克检测系统、商店状态AI">AI Chatbot Platform, Poker Detection System, Store Status AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-zh="联系我">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Let's discuss how we can work together" data-zh="让我们讨论如何合作">Let's discuss how we can work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Email" data-zh="邮箱">Email</h4>
+                            <p>weihaotan.77@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Phone" data-zh="电话">Phone</h4>
+                            <p>+60-11-11199174</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Location" data-zh="位置">Location</h4>
+                            <p>Kajang, Selangor, 43000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/tan-wei-hao-147b69149</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" data-en="Your Name" data-zh="您的姓名" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" data-en="Your Email" data-zh="您的邮箱" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" data-en="Subject" data-zh="主题" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea data-en="Your Message" data-zh="您的消息" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span data-en="Send Message" data-zh="发送消息">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tan Wei Hao. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/tan-wei-hao-147b69149" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <hr class="my-4" />
+                    <a href="mailto:weihaotan.77@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- Week 2-->
-        <section class="resume-section" id="work_exp">
-            <div class="resume-section-content" id="work1">
-                <h2 class="mb-5">Working Experience</h2>
-                <div class="d-flex justify-content-between mb-3">
-                    <h3 class="mb-0">Footfallcam (Meta Research)</h3>
-                    <div class="flex-shrink-0"><span class="text-primary date">1 Feb 2023 - 1 May 2023</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
-                </div>
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <span id="modalCaption" class="modal-caption"></span>
+                <button id="modalClose" class="modal-close">&times;</button>
             </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Week 3 -->
-        <section class="resume-section">
-            <div class="resume-section-content" id="week3">
-                <div class="d-flex justify-content-between mb-3">
-                    <h3 class="mb-0">Week 3</h3>
-                    <div class="flex-shrink-0"><span class="text-primary date">10 Oct - 16 Oct</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <div class="card h-100 crd" style="width: 18rem;">
-                            <img src="web_development/main/image/week3_e1.png" class="card-img-top card_img"
-                                alt="week3">
-                            <div class="card-body">
-                                <h5 class="card-title">Exercise 1 (Week 3)</h5>
-                                <p class="card-text">Php exercise 1</p>
-                                <div class="d-flex flex-row align-content-end mt-auto">
-                                    <a href="https://tanweihao0418.github.io/web_development/week3/random_num.php"
-                                        class="btn btn-primary">Click here
-                                        to view</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="card h-100 crd" style="width: 18rem;">
-                            <img src="web_development/main/image/week3_e2.png" class="card-img-top card_img"
-                                alt="week3">
-                            <div class="card-body">
-                                <h5 class="card-title">Exercise 2 (Week 3)</h5>
-                                <p class="card-text">Php exercise 2</p>
-                                <div class="d-flex flex-row align-content-end mt-auto">
-                                    <a href="https://tanweihao0418.github.io/web_development/week3/random_num_color.php"
-                                        class="btn btn-primary">Click here
-                                        to view</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="card h-100 crd" style="width: 18rem;">
-                            <img src="web_development/main/image/week3_e3.png" class="card-img-top card_img"
-                                alt="week3">
-                            <div class="card-body">
-                                <h5 class="card-title">Exercise 3 (Week 3)</h5>
-                                <p class="card-text">Php exercise 3</p>
-                                <div class="d-flex flex-row align-content-end mt-auto">
-                                    <a href="https://tanweihao0418.github.io/web_development/week3/sum.php"
-                                        class="btn btn-primary">Click here
-                                        to view</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="card h-100 crd" style="width: 18rem;">
-                            <img src="web_development/main/image/week3_h1.png" class="card-img-top card_img"
-                                alt="week3">
-                            <div class="card-body">
-                                <h5 class="card-title">Homework 1 (Week 3)</h5>
-                                <p class="card-text">Php homework 1</p>
-                                <div class="d-flex flex-row align-content-end mt-auto">
-                                    <a href="https://tanweihao0418.github.io/web_development/week3/date.php"
-                                        class="btn btn-primary">Click here
-                                        to view</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="card h-100 crd" style="width: 18rem;">
-                            <img src="web_development/main/image/week3_h2.png" class="card-img-top card_img"
-                                alt="week3">
-                            <div class="card-body">
-                                <h5 class="card-title">Homework 2 (Week 3)</h5>
-                                <p class="card-text">Php homework 2</p>
-                                <div class="d-flex flex-row align-content-end mt-auto">
-                                    <a href="https://tanweihao0418.github.io/web_development/week3/date_array.php"
-                                        class="btn btn-primary">Click here
-                                        to view</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-image" src="" alt="">
             </div>
-        </section>
-        <hr class="m-0" />
-        </section>
-        <hr class="m-0" />
-
-
-
-
+        </div>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
 
+    <script src="js/script.js"></script>
+    <script src="js/chatbot-widget.js"></script>
+    <script>
+	function removeAllWidgets() {
+            if (window.ChatbotWidget) {
+                window.ChatbotWidget.removeAll();
+            }
+        }
+        function createBasicWidget() {
+            // Remove existing widgets first
+            removeAllWidgets();
+            
+            // Create a basic widget (session auto-managed)
+            window.ChatbotWidget.create({
+                chatbotId: '68ac017b985a8e359a3b87e9'
+            });
+            
+            // Show session info for demonstration
+            setTimeout(() => showSessionInfo('demo-bot-1'), 1000);
+        }
+
+        window.addEventListener('load', () => {
+            // Small delay to make it feel more natural
+            setTimeout(() => {
+                createBasicWidget();
+            }, 1000);
+        });
+
+    </script>
+    
+</body>
 </html>

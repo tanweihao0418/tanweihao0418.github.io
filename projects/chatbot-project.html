@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot Platform - Project Details | Tan Wei Hao</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none;">
+                    <span class="logo-text">TW</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link" data-en="Back to Portfolio" data-zh="返回作品集">Back to Portfolio</a></li>
+                <li><a href="#overview" class="nav-link" data-en="Overview" data-zh="概述">Overview</a></li>
+                <li><a href="#demo" class="nav-link" data-en="Demo" data-zh="演示">Demo</a></li>
+                <li><a href="#features" class="nav-link" data-en="Features" data-zh="功能">Features</a></li>
+                <li><a href="#technical" class="nav-link" data-en="Technical" data-zh="技术">Technical</a></li>
+                <li><a href="#upcoming" class="nav-link" data-en="Roadmap" data-zh="路线图">Roadmap</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="lang-toggle" aria-label="切换语言 / Switch Language">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text">中文</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-breadcrumb">
+                    <a href="../index.html" data-en="Portfolio" data-zh="作品集">Portfolio</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-en="Projects" data-zh="项目">Projects</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span data-en="AI ChatBot Platform" data-zh="AI聊天机器人平台">AI ChatBot Platform</span>
+                </div>
+                <h1 class="project-title">
+                    <i class="fas fa-robot"></i>
+                    <span data-en="AI-Powered ChatBot Platform" data-zh="AI驱动的聊天机器人平台">AI-Powered ChatBot Platform</span>
+                </h1>
+                <p class="project-subtitle" data-en="Complete End-to-End AI Chatbot Management Platform with GPT-4.1 Integration" data-zh="集成GPT-4.1的完整端到端AI聊天机器人管理平台">
+                    Complete End-to-End AI Chatbot Management Platform with GPT-4.1 Integration
+                </p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>2024 - Present</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-code"></i>
+                        <span>Vue.js 3, FastAPI, OpenAI GPT-4.1</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>Full-Stack Development</span>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        <span data-en="View Demo" data-zh="查看演示">View Demo</span>
+                    </a>
+                    <a href="#technical" class="btn btn-outline">
+                        <i class="fas fa-code"></i>
+                        <span data-en="Technical Details" data-zh="技术详情">Technical Details</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="project-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Project Overview" data-zh="项目概述">Project Overview</h2>
+                <p class="section-subtitle" data-en="A comprehensive AI chatbot management platform with enterprise-level features" data-zh="具有企业级功能的综合AI聊天机器人管理平台">A comprehensive AI chatbot management platform with enterprise-level features</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p data-en="This project represents a complete end-to-end AI chatbot management platform built with Vue.js 3 and FastAPI. The platform features advanced GPT-4.1 integration with enhanced 128K context window, comprehensive knowledge base management, and production-ready widget deployment capabilities." data-zh="该项目代表了一个使用Vue.js 3和FastAPI构建的完整端到端AI聊天机器人管理平台。该平台具有先进的GPT-4.1集成，增强的128K上下文窗口、全面的知识库管理和生产就绪的小组件部署功能。">
+                        This project represents a complete end-to-end AI chatbot management platform built with Vue.js 3 and FastAPI. 
+                        The platform features advanced GPT-4.1 integration with enhanced 128K context window, comprehensive knowledge 
+                        base management, and production-ready widget deployment capabilities.
+                    </p>
+                    <p data-en="The system demonstrates significant improvements over traditional chatbot solutions, featuring upgraded GPT-4.1 models that deliver superior knowledge base integration, structured responses with source attribution, and improved cost efficiency. The platform includes multi-tenant support, real-time chat capabilities, and comprehensive analytics." data-zh="该系统相比传统聊天机器人解决方案展现出显著改进，具有升级的GPT-4.1模型，提供卓越的知识库集成、带有来源归属的结构化响应和改进的成本效益。该平台包括多租户支持、实时聊天功能和全面的分析。">
+                        The system demonstrates significant improvements over traditional chatbot solutions, featuring upgraded GPT-4.1 
+                        models that deliver superior knowledge base integration, structured responses with source attribution, and 
+                        improved cost efficiency. The platform includes multi-tenant support, real-time chat capabilities, and 
+                        comprehensive analytics.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 data-en="GPT-4.1 Enhanced" data-zh="GPT-4.1增强版">GPT-4.1 Enhanced</h3>
+                            <p data-en="128K context window with superior knowledge integration" data-zh="128K上下文窗口，具有卓越的知识集成">128K context window with superior knowledge integration</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 data-en="Knowledge Base" data-zh="知识库">Knowledge Base</h3>
+                            <p data-en="Multi-format document processing and RAG pipeline" data-zh="多格式文档处理和RAG管道">Multi-format document processing and RAG pipeline</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 data-en="Widget Integration" data-zh="小组件集成">Widget Integration</h3>
+                            <p data-en="Web Component-based deployment system" data-zh="基于Web组件的部署系统">Web Component-based deployment system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Walkthrough -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Complete Demonstration Walkthrough" data-zh="完整演示流程">Complete Demonstration Walkthrough</h2>
+                <p class="section-subtitle" data-en="End-to-end platform demonstration with Playwright automation" data-zh="使用Playwright自动化的端到端平台演示">End-to-end platform demonstration with Playwright automation</p>
+            </div>
+            
+            <div class="demo-steps">
+                <!-- Step 1: Authentication -->
+                <div class="demo-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-info">
+                            <h3 data-en="User Authentication System" data-zh="用户认证系统">User Authentication System</h3>
+                            <p data-en="Secure signup and login with form validation and session management" data-zh="具有表单验证和会话管理的安全注册和登录">Secure signup and login with form validation and session management</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span data-en="Secure user registration with form validation" data-zh="具有表单验证的安全用户注册">Secure user registration with form validation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-key"></i>
+                                    <span data-en="Login system with session persistence" data-zh="具有会话持久化的登录系统">Login system with session persistence</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span data-en="Responsive design for all devices" data-zh="适用于所有设备的响应式设计">Responsive design for all devices</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="demo-image-container">
+                                <img src="../images/chatbot/03-signup-form-filled.png" alt="Signup Form" class="demo-image">
+                                <div class="image-caption">SignupView.vue - User Registration Interface</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Knowledge Base -->
+                <div class="demo-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-info">
+                            <h3 data-en="Knowledge Base Management" data-zh="知识库管理">Knowledge Base Management</h3>
+                            <p data-en="Advanced document processing and content indexing system" data-zh="高级文档处理和内容索引系统">Advanced document processing and content indexing system</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-file-upload"></i>
+                                    <span data-en="HTML file upload and processing (19.22 KB resume)" data-zh="HTML文件上传和处理（19.22 KB简历）">HTML file upload and processing (19.22 KB resume)</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-search"></i>
+                                    <span data-en="Automatic content extraction and indexing" data-zh="自动内容提取和索引">Automatic content extraction and indexing</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tags"></i>
+                                    <span data-en="Knowledge base versioning and metadata management" data-zh="知识库版本控制和元数据管理">Knowledge base versioning and metadata management</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="demo-image-container">
+                                <img src="../images/chatbot/knowledge-base-created-success.png" alt="Knowledge Base Success" class="demo-image">
+                                <div class="image-caption">Successfully Created "Tan Wei Hao Resume" Knowledge Base</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Chatbot Creation -->
+                <div class="demo-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div class="step-info">
+                            <h3 data-en="AI Chatbot Configuration" data-zh="AI聊天机器人配置">AI Chatbot Configuration</h3>
+                            <p data-en="Comprehensive chatbot setup with GPT-4.1 integration" data-zh="全面的聊天机器人设置，集成GPT-4.1">Comprehensive chatbot setup with GPT-4.1 integration</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-cogs"></i>
+                                    <span data-en="Multi-tab configuration interface" data-zh="多标签配置界面">Multi-tab configuration interface</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span data-en="AI model selection (GPT-4.1, GPT-4o-mini)" data-zh="AI模型选择（GPT-4.1、GPT-4o-mini）">AI model selection (GPT-4.1, GPT-4o-mini)</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-link"></i>
+                                    <span data-en="Knowledge base integration with confidence scoring" data-zh="具有置信度评分的知识库集成">Knowledge base integration with confidence scoring</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="demo-image-container">
+                                <img src="../images/chatbot/step4-chatbot-basic-setup.png" alt="Chatbot Setup" class="demo-image">
+                                <div class="image-caption">ChatBotView.vue - "Resume Assistant" Configuration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: GPT-4.1 Enhancement -->
+                <div class="demo-step highlight-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <div class="step-info">
+                            <h3 data-en="GPT-4.1 Model Upgrade & Enhanced Testing" data-zh="GPT-4.1模型升级和增强测试">GPT-4.1 Model Upgrade & Enhanced Testing</h3>
+                            <p data-en="Significant performance improvements with 128K context window" data-zh="128K上下文窗口带来的显著性能改进">Significant performance improvements with 128K context window</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-features">
+                            <div class="enhancement-box">
+                                <h4><i class="fas fa-rocket"></i> <span data-en="Key Improvements" data-zh="关键改进">Key Improvements</span></h4>
+                                <div class="improvement-grid">
+                                    <div class="improvement-item">
+                                        <i class="fas fa-expand"></i>
+                                        <span data-en="128K context window (vs 8K in GPT-4)" data-zh="128K上下文窗口（相比GPT-4的8K）">128K context window (vs 8K in GPT-4)</span>
+                                    </div>
+                                    <div class="improvement-item">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span data-en="$0.025/1K tokens (vs $0.03/1K in GPT-4)" data-zh="$0.025/1K令牌（相比GPT-4的$0.03/1K）">$0.025/1K tokens (vs $0.03/1K in GPT-4)</span>
+                                    </div>
+                                    <div class="improvement-item">
+                                        <i class="fas fa-brain"></i>
+                                        <span data-en="Superior knowledge base integration" data-zh="卓越的知识库集成">Superior knowledge base integration</span>
+                                    </div>
+                                    <div class="improvement-item">
+                                        <i class="fas fa-quote-right"></i>
+                                        <span data-en="Source attribution and structured responses" data-zh="来源归属和结构化响应">Source attribution and structured responses</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="demo-image-container">
+                                <img src="../images/chatbot/step7-gpt41-successful-knowledge-base-response.png" alt="GPT-4.1 Response" class="demo-image">
+                                <div class="image-caption" data-en="GPT-4.1 Enhanced Response with Source Attribution" data-zh="GPT-4.1增强响应与来源归属">GPT-4.1 Enhanced Response with Source Attribution</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Widget Integration -->
+                <div class="demo-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <div class="step-info">
+                            <h3 data-en="Production Widget Testing" data-zh="生产小组件测试">Production Widget Testing</h3>
+                            <p data-en="Real-world chatbot widget integration and testing" data-zh="真实世界聊天机器人小组件集成和测试">Real-world chatbot widget integration and testing</p>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span data-en="Web Component-based architecture" data-zh="基于Web组件的架构">Web Component-based architecture</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comments"></i>
+                                    <span data-en="Real-time chat with session management" data-zh="具有会话管理的实时聊天">Real-time chat with session management</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span data-en="Built-in feedback mechanism" data-zh="内置反馈机制">Built-in feedback mechanism</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="demo-image-container">
+                                <img src="../images/chatbot/widget-complete-conversation.png" alt="Widget Testing" class="demo-image">
+                                <div class="image-caption">Complete Widget Testing - Chatbot ID: 68ac017b985a8e359a3b87e9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Key Features & Capabilities" data-zh="关键功能和能力">Key Features & Capabilities</h2>
+                <p class="section-subtitle" data-en="Enterprise-level chatbot management platform" data-zh="企业级聊天机器人管理平台">Enterprise-level chatbot management platform</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-en="Advanced AI Integration" data-zh="高级AI集成">Advanced AI Integration</h3>
+                    <p data-en="GPT-4.1 models with 128K context window, enhanced knowledge processing, and superior RAG performance for intelligent conversations." data-zh="GPT-4.1模型具有128K上下文窗口、增强的知识处理和卓越的RAG性能，用于智能对话。">GPT-4.1 models with 128K context window, enhanced knowledge processing, and superior RAG performance for intelligent conversations.</p>
+                    <ul class="feature-details">
+                        <li data-en="GPT-4.1 with enhanced capabilities" data-zh="具有增强功能的GPT-4.1">GPT-4.1 with enhanced capabilities</li>
+                        <li data-en="128K context window" data-zh="128K上下文窗口">128K context window</li>
+                        <li data-en="Improved cost efficiency" data-zh="改进的成本效益">Improved cost efficiency</li>
+                        <li data-en="Source attribution" data-zh="来源归属">Source attribution</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 data-en="Knowledge Base Management" data-zh="知识库管理">Knowledge Base Management</h3>
+                    <p data-en="Advanced document processing system supporting multiple file formats with automatic content extraction and intelligent indexing." data-zh="支持多种文件格式的高级文档处理系统，具有自动内容提取和智能索引功能。">Advanced document processing system supporting multiple file formats with automatic content extraction and intelligent indexing.</p>
+                    <ul class="feature-details">
+                        <li data-en="Multi-format file support" data-zh="多格式文件支持">Multi-format file support</li>
+                        <li data-en="Automatic content extraction" data-zh="自动内容提取">Automatic content extraction</li>
+                        <li data-en="Vector database integration" data-zh="向量数据库集成">Vector database integration</li>
+                        <li data-en="Version control" data-zh="版本控制">Version control</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 data-en="Multi-Tab Configuration" data-zh="多标签配置">Multi-Tab Configuration</h3>
+                    <p data-en="Comprehensive chatbot configuration interface with basic setup, instructions, knowledge integration, and advanced settings." data-zh="全面的聊天机器人配置界面，包括基本设置、指令、知识集成和高级设置。">Comprehensive chatbot configuration interface with basic setup, instructions, knowledge integration, and advanced settings.</p>
+                    <ul class="feature-details">
+                        <li data-en="Basic setup configuration" data-zh="基本设置配置">Basic setup configuration</li>
+                        <li data-en="Custom instructions" data-zh="自定义指令">Custom instructions</li>
+                        <li data-en="Knowledge base attachment" data-zh="知识库附件">Knowledge base attachment</li>
+                        <li data-en="Advanced settings" data-zh="高级设置">Advanced settings</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3 data-en="Widget Integration" data-zh="小组件集成">Widget Integration</h3>
+                    <p data-en="Production-ready Web Component system for seamless chatbot deployment with one-line integration code." data-zh="用于无缝聊天机器人部署的生产就绪Web组件系统，只需一行集成代码。">Production-ready Web Component system for seamless chatbot deployment with one-line integration code.</p>
+                    <ul class="feature-details">
+                        <li data-en="Web Component architecture" data-zh="Web组件架构">Web Component architecture</li>
+                        <li data-en="One-line integration" data-zh="一行集成">One-line integration</li>
+                        <li data-en="Responsive design" data-zh="响应式设计">Responsive design</li>
+                        <li data-en="Session persistence" data-zh="会话持久化">Session persistence</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-en="Analytics & Monitoring" data-zh="分析和监控">Analytics & Monitoring</h3>
+                    <p data-en="Comprehensive analytics dashboard with conversation tracking, performance metrics, and user engagement insights." data-zh="全面的分析仪表板，具有对话跟踪、性能指标和用户参与洞察。">Comprehensive analytics dashboard with conversation tracking, performance metrics, and user engagement insights.</p>
+                    <ul class="feature-details">
+                        <li data-en="Conversation analytics" data-zh="对话分析">Conversation analytics</li>
+                        <li data-en="Performance metrics" data-zh="性能指标">Performance metrics</li>
+                        <li data-en="User engagement tracking" data-zh="用户参与度跟踪">User engagement tracking</li>
+                        <li data-en="Real-time monitoring" data-zh="实时监控">Real-time monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Security & Authentication" data-zh="安全和身份验证">Security & Authentication</h3>
+                    <p data-en="Enterprise-grade security with user authentication, session management, and secure API endpoints." data-zh="企业级安全性，具有用户身份验证、会话管理和安全API端点。">Enterprise-grade security with user authentication, session management, and secure API endpoints.</p>
+                    <ul class="feature-details">
+                        <li data-en="User authentication system" data-zh="用户身份验证系统">User authentication system</li>
+                        <li data-en="Session management" data-zh="会话管理">Session management</li>
+                        <li data-en="Secure API endpoints" data-zh="安全API端点">Secure API endpoints</li>
+                        <li data-en="Data encryption" data-zh="数据加密">Data encryption</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Technical Implementation" data-zh="技术实现">Technical Implementation</h2>
+                <p class="section-subtitle" data-en="Architecture, technologies, and development approach" data-zh="架构、技术和开发方法">Architecture, technologies, and development approach</p>
+            </div>
+            
+            <div class="tech-content">
+                <div class="tech-stack-section">
+                    <h3><i class="fas fa-layer-group"></i> <span data-en="Technology Stack" data-zh="技术栈">Technology Stack</span></h3>
+                    <div class="tech-stack-grid">
+                        <div class="tech-category">
+                            <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Vue.js 3</span>
+                                <span class="tech-item">Composition API</span>
+                                <span class="tech-item">Vue Router</span>
+                                <span class="tech-item">Vite Build Tool</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4><i class="fas fa-server"></i> Backend</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Python FastAPI</span>
+                                <span class="tech-item">OpenAI GPT-4.1</span>
+                                <span class="tech-item">Qdrant Vector DB</span>
+                                <span class="tech-item">MongoDB</span>
+                                <span class="tech-item">JWT Authentication</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4><i class="fas fa-tools"></i> Development</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Playwright Testing</span>
+                                <span class="tech-item">MCP Integration</span>
+                                <span class="tech-item">GitHub Actions</span>
+                                <span class="tech-item">ESLint/Prettier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="architecture-section">
+                    <h3><i class="fas fa-sitemap"></i> <span data-en="System Architecture" data-zh="系统架构">System Architecture</span></h3>
+                    <div class="architecture-grid">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h4 data-en="Frontend Layer" data-zh="前端层">Frontend Layer</h4>
+                            <p data-en="Vue.js 3 single-page application with component-based architecture, reactive state management, and responsive design." data-zh="Vue.js 3单页应用程序，具有基于组件的架构、响应式状态管理和响应式设计。">Vue.js 3 single-page application with component-based architecture, reactive state management, and responsive design.</p>
+                        </div>
+                        
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4 data-en="API Gateway" data-zh="API网关">API Gateway</h4>
+                            <p data-en="FastAPI backend with RESTful endpoints, authentication middleware, and request/response validation." data-zh="FastAPI后端，具有RESTful端点、身份验证中间件和请求/响应验证。">FastAPI backend with RESTful endpoints, authentication middleware, and request/response validation.</p>
+                        </div>
+                        
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 data-en="AI Processing" data-zh="AI处理">AI Processing</h4>
+                            <p data-en="OpenAI GPT-4.1 integration with RAG pipeline, knowledge base retrieval, and context management." data-zh="OpenAI GPT-4.1集成，具有RAG管道、知识库检索和上下文管理。">OpenAI GPT-4.1 integration with RAG pipeline, knowledge base retrieval, and context management.</p>
+                        </div>
+                        
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 data-en="Data Layer" data-zh="数据层">Data Layer</h4>
+                            <p data-en="MongoDB for non-structured data, Qdrant for vector embeddings, and MySQLite for caching and sessions." data-zh="MongoDB用于非结构化数据，Qdrant用于向量嵌入，MySQLite用于缓存和会话。">MongoDB for non-structured data, Qdrant for vector embeddings, and MySQLite for caching and sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-section">
+                    <h3><i class="fas fa-tachometer-alt"></i> <span data-en="Performance Metrics" data-zh="性能指标">Performance Metrics</span></h3>
+                    <div class="performance-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">128K</div>
+                            <div class="metric-label" data-en="Context Window" data-zh="上下文窗口">Context Window</div>
+                            <div class="metric-description" data-en="GPT-4.1 enhanced capacity" data-zh="GPT-4.1增强容量">GPT-4.1 enhanced capacity</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-value">$0.025</div>
+                            <div class="metric-label" data-en="Cost per 1K tokens" data-zh="每1K令牌成本">Cost per 1K tokens</div>
+                            <div class="metric-description" data-en="Improved cost efficiency" data-zh="改进的成本效益">Improved cost efficiency</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-value">&lt;200ms</div>
+                            <div class="metric-label" data-en="Response Time" data-zh="响应时间">Response Time</div>
+                            <div class="metric-description" data-en="Average API response" data-zh="平均API响应">Average API response</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-value">99.9%</div>
+                            <div class="metric-label" data-en="Uptime" data-zh="正常运行时间">Uptime</div>
+                            <div class="metric-description" data-en="System availability" data-zh="系统可用性">System availability</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="development-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Development Process & Testing" data-zh="开发流程和测试">Development Process & Testing</h2>
+                <p class="section-subtitle" data-en="Comprehensive testing and automation with Playwright MCP" data-zh="使用Playwright MCP进行全面测试和自动化">Comprehensive testing and automation with Playwright MCP</p>
+            </div>
+            
+            <div class="development-content">
+                <div class="testing-approach">
+                    <h3><i class="fas fa-vial"></i> <span data-en="Testing Strategy" data-zh="测试策略">Testing Strategy</span></h3>
+                    <div class="testing-grid">
+                        <div class="testing-item">
+                            <i class="fas fa-robot"></i>
+                            <h4 data-en="Automated Testing" data-zh="自动化测试">Automated Testing</h4>
+                            <p data-en="Playwright MCP integration for comprehensive end-to-end testing with screenshot documentation and performance analysis." data-zh="Playwright MCP集成，用于全面的端到端测试，包括截图文档和性能分析。">Playwright MCP integration for comprehensive end-to-end testing with screenshot documentation and performance analysis.</p>
+                        </div>
+                        
+                        <div class="testing-item">
+                            <i class="fas fa-comments"></i>
+                            <h4 data-en="Conversation Testing" data-zh="对话测试">Conversation Testing</h4>
+                            <p data-en="Real-time chatbot testing with knowledge base integration validation and response quality assessment." data-zh="实时聊天机器人测试，包括知识库集成验证和响应质量评估。">Real-time chatbot testing with knowledge base integration validation and response quality assessment.</p>
+                        </div>
+                        
+                        <div class="testing-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4 data-en="Performance Monitoring" data-zh="性能监控">Performance Monitoring</h4>
+                            <p data-en="Continuous monitoring of response times, token usage, and system performance across all components." data-zh="持续监控所有组件的响应时间、令牌使用和系统性能。">Continuous monitoring of response times, token usage, and system performance across all components.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-summary">
+                    <h3><i class="fas fa-trophy"></i> <span data-en="Project Results" data-zh="项目成果">Project Results</span></h3>
+                    <div class="results-grid">
+                        <div class="result-item success">
+                            <i class="fas fa-check-circle"></i>
+                            <h4 data-en="GPT-4.1 Upgrade Success" data-zh="GPT-4.1升级成功">GPT-4.1 Upgrade Success</h4>
+                            <p data-en="Transformed technical errors into comprehensive professional responses with source attribution" data-zh="将技术错误转化为带有来源归属的全面专业响应">Transformed technical errors into comprehensive professional responses with source attribution</p>
+                        </div>
+                        
+                        <div class="result-item success">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <h4 data-en="Widget Integration" data-zh="小组件集成">Widget Integration</h4>
+                            <p data-en="Production-ready chatbot widget successfully deployed with seamless API integration" data-zh="生产就绪的聊天机器人小组件成功部署，具有无缝API集成">Production-ready chatbot widget successfully deployed with seamless API integration</p>
+                        </div>
+                        
+                        <div class="result-item success">
+                            <i class="fas fa-database"></i>
+                            <h4 data-en="Knowledge Base Processing" data-zh="知识库处理">Knowledge Base Processing</h4>
+                            <p data-en="Successfully processed 19.22 KB resume file with complete content indexing and metadata" data-zh="成功处理19.22 KB简历文件，完成内容索引和元数据">Successfully processed 19.22 KB resume file with complete content indexing and metadata</p>
+                        </div>
+                        
+                        <div class="result-item success">
+                            <i class="fas fa-users"></i>
+                            <h4 data-en="Complete User Journey" data-zh="完整用户旅程">Complete User Journey</h4>
+                            <p data-en="End-to-end demonstration from authentication through production widget testing" data-zh="从身份验证到生产小组件测试的端到端演示">End-to-end demonstration from authentication through production widget testing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Features -->
+    <section id="upcoming" class="upcoming-features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="🚀 Revolutionary Features Coming Soon" data-zh="🚀 即将推出的革命性功能">🚀 Revolutionary Features Coming Soon</h2>
+                <p class="section-subtitle" data-en="Next-generation AI capabilities that will transform how businesses interact with their customers" data-zh="将改变企业与客户互动方式的下一代AI能力">Next-generation AI capabilities that will transform how businesses interact with their customers</p>
+            </div>
+            
+            <div class="upcoming-content">
+                <div class="roadmap-intro">
+                    <div class="roadmap-text">
+                        <h3 data-en="The Future of AI-Powered Customer Engagement" data-zh="AI驱动客户参与的未来">The Future of AI-Powered Customer Engagement</h3>
+                        <p data-en="We're pushing the boundaries of conversational AI with groundbreaking features that will revolutionize customer interactions. From intelligent voice agents to seamless omnichannel integration, these upcoming capabilities will create unprecedented customer experiences." data-zh="我们正在突破对话式AI的界限，推出将彻底改变客户互动的突破性功能。从智能语音代理到无缝的全渠道集成，这些即将推出的功能将创造前所未有的客户体验。">
+                            We're pushing the boundaries of conversational AI with groundbreaking features that will revolutionize 
+                            customer interactions. From intelligent voice agents to seamless omnichannel integration, these upcoming 
+                            capabilities will create unprecedented customer experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upcoming-features-grid">
+                    <!-- MCP Integration -->
+                    <div class="upcoming-feature-card premium">
+                        <div class="feature-badge" data-en="Next-Gen AI" data-zh="下一代AI">Next-Gen AI</div>
+                        <div class="upcoming-feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 data-en="Advanced MCP Integration" data-zh="高级MCP集成">Advanced MCP Integration</h3>
+                        <p class="feature-tagline" data-en="Supercharge AI Agent Capabilities" data-zh="增强AI代理能力">Supercharge AI Agent Capabilities</p>
+                        <p class="feature-description" data-en="Unleash the full potential of AI agents with Model Context Protocol integration, enabling dynamic tool usage, real-time data access, and intelligent decision-making that adapts to any business scenario." data-zh="通过模型上下文协议集成释放AI代理的全部潜力，实现动态工具使用、实时数据访问和适应任何业务场景的智能决策。">
+                            Unleash the full potential of AI agents with Model Context Protocol integration, enabling dynamic 
+                            tool usage, real-time data access, and intelligent decision-making that adapts to any business scenario.
+                        </p>
+                        <ul class="upcoming-feature-list">
+                            <li><i class="fas fa-bolt"></i> <span data-en="Dynamic tool integration & API connectivity" data-zh="动态工具集成和API连接">Dynamic tool integration & API connectivity</span></li>
+                            <li><i class="fas fa-sync-alt"></i> <span data-en="Real-time data processing & analysis" data-zh="实时数据处理和分析">Real-time data processing & analysis</span></li>
+                            <li><i class="fas fa-brain"></i> <span data-en="Context-aware decision making" data-zh="上下文感知决策">Context-aware decision making</span></li>
+                            <li><i class="fas fa-code"></i> <span data-en="Custom workflow automation" data-zh="自定义工作流自动化">Custom workflow automation</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Voice AI -->
+                    <div class="upcoming-feature-card premium">
+                        <div class="feature-badge" data-en="Voice AI" data-zh="语音AI">Voice AI</div>
+                        <div class="upcoming-feature-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <h3 data-en="Intelligent Voice Agents" data-zh="智能语音代理">Intelligent Voice Agents</h3>
+                        <p class="feature-tagline" data-en="Powered by ElevenLabs Technology" data-zh="由ElevenLabs技术驱动">Powered by ElevenLabs Technology</p>
+                        <p class="feature-description" data-en="Transform customer service with ultra-realistic AI voice agents featuring natural conversation flows, emotional intelligence, and multilingual support for truly human-like interactions." data-zh="通过具有自然对话流程、情感智能和多语言支持的超逼真AI语音代理改变客户服务，实现真正人性化的互动。">
+                            Transform customer service with ultra-realistic AI voice agents featuring natural conversation flows, 
+                            emotional intelligence, and multilingual support for truly human-like interactions.
+                        </p>
+                        <ul class="upcoming-feature-list">
+                            <li><i class="fas fa-globe"></i> <span data-en="29+ languages with native accents" data-zh="29+种语言，具有本地口音">29+ languages with native accents</span></li>
+                            <li><i class="fas fa-heart"></i> <span data-en="Emotional tone recognition & response" data-zh="情感语调识别和响应">Emotional tone recognition & response</span></li>
+                            <li><i class="fas fa-phone"></i> <span data-en="Real-time conversation handling" data-zh="实时对话处理">Real-time conversation handling</span></li>
+                            <li><i class="fas fa-user-tie"></i> <span data-en="Customizable voice personalities" data-zh="可定制的语音个性">Customizable voice personalities</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Multi-Agent -->
+                    <div class="upcoming-feature-card premium">
+                        <div class="feature-badge" data-en="Enterprise AI" data-zh="企业AI">Enterprise AI</div>
+                        <div class="upcoming-feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 data-en="Multi-Agent Collaboration" data-zh="多代理协作">Multi-Agent Collaboration</h3>
+                        <p class="feature-tagline" data-en="Orchestrated AI Team Solutions" data-zh="协调的AI团队解决方案">Orchestrated AI Team Solutions</p>
+                        <p class="feature-description" data-en="Deploy specialized AI agents that work together seamlessly to handle complex, multi-step tasks with unprecedented efficiency and accuracy across your entire business ecosystem." data-zh="部署专业的AI代理，它们无缝协作处理复杂的多步骤任务，在整个业务生态系统中实现前所未有的效率和准确性。">
+                            Deploy specialized AI agents that work together seamlessly to handle complex, multi-step tasks with 
+                            unprecedented efficiency and accuracy across your entire business ecosystem.
+                        </p>
+                        <ul class="upcoming-feature-list">
+                            <li><i class="fas fa-project-diagram"></i> <span data-en="Intelligent task delegation & routing" data-zh="智能任务委派和路由">Intelligent task delegation & routing</span></li>
+                            <li><i class="fas fa-handshake"></i> <span data-en="Cross-agent knowledge sharing" data-zh="跨代理知识共享">Cross-agent knowledge sharing</span></li>
+                            <li><i class="fas fa-cogs"></i> <span data-en="Automated workflow orchestration" data-zh="自动化工作流编排">Automated workflow orchestration</span></li>
+                            <li><i class="fas fa-shield-alt"></i> <span data-en="Enterprise-grade security & compliance" data-zh="企业级安全和合规">Enterprise-grade security & compliance</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Omnichannel -->
+                    <div class="upcoming-feature-card premium">
+                        <div class="feature-badge" data-en="Omnichannel" data-zh="全渠道">Omnichannel</div>
+                        <div class="upcoming-feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 data-en="Universal Communication Hub" data-zh="通用通信中心">Universal Communication Hub</h3>
+                        <p class="feature-tagline" data-en="WhatsApp, Email & Live Chat Integration" data-zh="WhatsApp、邮件和在线客服集成">WhatsApp, Email & Live Chat Integration</p>
+                        <p class="feature-description" data-en="Create unified customer experiences across all communication channels with intelligent routing, context preservation, and seamless handoffs between platforms and human agents." data-zh="通过智能路由、上下文保存和平台与人工代理间的无缝交接，在所有通信渠道中创建统一的客户体验。">
+                            Create unified customer experiences across all communication channels with intelligent routing, 
+                            context preservation, and seamless handoffs between platforms and human agents.
+                        </p>
+                        <ul class="upcoming-feature-list">
+                            <li><i class="fab fa-whatsapp"></i> <span data-en="WhatsApp Business API integration" data-zh="WhatsApp商业API集成">WhatsApp Business API integration</span></li>
+                            <li><i class="fas fa-envelope"></i> <span data-en="Smart email agent automation" data-zh="智能邮件代理自动化">Smart email agent automation</span></li>
+                            <li><i class="fas fa-headset"></i> <span data-en="Live chat with agent handoff" data-zh="带代理交接的在线客服">Live chat with agent handoff</span></li>
+                            <li><i class="fas fa-history"></i> <span data-en="Cross-platform conversation history" data-zh="跨平台对话历史">Cross-platform conversation history</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tan Wei Hao. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html" class="footer-link" data-en="Back to Portfolio" data-zh="返回作品集">Back to Portfolio</a>
+                    <a href="index.html#projects" class="footer-link" data-en="Other Projects" data-zh="其他项目">Other Projects</a>
+                    <a href="index.html#contact" class="footer-link" data-en="Contact" data-zh="联系">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/chatbot-widget.js"></script>
+    <script>
+	function removeAllWidgets() {
+            if (window.ChatbotWidget) {
+                window.ChatbotWidget.removeAll();
+            }
+        }
+        function createBasicWidget() {
+            // Remove existing widgets first
+            removeAllWidgets();
+            
+            // Create a basic widget (session auto-managed)
+            window.ChatbotWidget.create({
+                chatbotId: '68ac017b985a8e359a3b87e9'
+            });
+            
+            // Show session info for demonstration
+            setTimeout(() => showSessionInfo('demo-bot-1'), 1000);
+        }
+
+        window.addEventListener('load', () => {
+            // Small delay to make it feel more natural
+            setTimeout(() => {
+                createBasicWidget();
+            }, 1000);
+        });
+
+    </script>
+</body>
+</html>
