@@ -453,6 +453,13 @@ document.head.appendChild(styleSheet);
 
 // Image Expansion Functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if there are demo images on this page
+    const demoImages = document.querySelectorAll('.demo-image');
+    if (demoImages.length === 0) {
+        // No demo images found, skip modal creation
+        return;
+    }
+    
     // Create modal HTML structure
     const modalHTML = `
         <div class="image-modal" id="imageModal">
@@ -474,7 +481,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.getElementById('modalClose');
     
     // Add click event to all demo images
-    const demoImages = document.querySelectorAll('.demo-image');
     demoImages.forEach(img => {
         img.addEventListener('click', function() {
             modal.classList.add('active');
